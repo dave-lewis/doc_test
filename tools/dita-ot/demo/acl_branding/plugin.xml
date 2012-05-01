@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file is part of the DITA Open Toolkit project hosted on 
+     Sourceforge.net. See the accompanying license.txt file in the
+     main toolkit package for applicable licenses.-->
+<!-- (C) Copyright IBM Corporation 2006 All Rights Reserved. -->
+
+<!-- 
+     This is the plugin file that controls integration into the toolkit.
+     Each item in the plugin that extends a toolkit function must be listed
+     here. The only critical component is the catalog file, which must 
+     extend the Toolkit's catalog in order for your files to be processed.
+
+     If nothing else is overridden, then the toolkit will use fallback processing.
+     This plugin file demonstrates how to imbed an override for XHTML formatting,
+     so that not every element will use fallback processing.
+
+     Be sure to change the plugin ID to use your own specialization name, rather than
+     music.
+
+     NOTE: paths in this file are relative to the current directory
+           (the same directory that includes this file).
+-->
+
+<plugin id="com.acl.branding">
+  <!-- Adds custom parameter to include Google analytic code when required. -->
+  <feature extension="dita.conductor.html.param" value="insertParameters.xml" type="file"/>
+  <feature extension="dita.conductor.xhtml.param" value="insertParameters.xml" type="file"/>
+  <!-- Extend the toolkit's XHTML processing to override XHTML output. -->
+  <feature extension="dita.xsl.xhtml" value="xsl/acl_branding.xsl" type="file"/>
+  <!-- Fix table and figure processing to support FrameMaker attributes -->
+  <feature extension="dita.xsl.topicpull" value="xsl/topicpull_changes.xsl" type="file"/>
+  <feature extension="dita.xsl.strings" file="strings/acl_strings.xml" />
+   <!-- Add an Ant file that sets a default for the new parameter -->
+   <!--
+       <feature extension="dita.conductor.target.relative" file="antWrapper.xml"/>
+       -->
+</plugin>

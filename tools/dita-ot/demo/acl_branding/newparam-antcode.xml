@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  
+    <condition property="args.htmlhelp.IncludeGoogleJS" value="no">
+        <not>
+            <isset property="args.htmlhelp.IncludeGoogleJS" />
+        </not>
+    </condition>
+
+</project>

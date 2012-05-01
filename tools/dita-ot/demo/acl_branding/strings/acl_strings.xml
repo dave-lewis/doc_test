@@ -1,0 +1,14 @@
+<? xml version="1.0" encoding="utf-8"?>
+<langlist>
+	<lang xml:lang="de-de" 	filename="acl-de-de.xml" />
+	<lang xml:lang="en" 	filename="acl-en-us.xml" />
+	<lang xml:lang="en-us" 	filename="acl-en-us.xml" />
+	<lang xml:lang="es-es" 	filename="acl-es-es.xml" />
+	<lang xml:lang="fr-fr" 	filename="acl-fr-fr.xml" />
+	<lang xml:lang="ja-jp" 	filename="acl-ja-jp.xml" />
+	<lang xml:lang="ko-kr" 	filename="acl-ko-kr.xml" />
+	<lang xml:lang="pl-pl" 	filename="acl-pl-pl.xml" />
+	<lang xml:lang="pt" 	filename="acl-pt-br.xml" />
+	<lang xml:lang="pt-br" 	filename="acl-pt-br.xml" />
+	<lang xml:lang="zh-cn" 	filename="acl-zh-cn.xml" />
+</langlist>
