@@ -1,14 +1,16 @@
-<project name="plus-allhtml-treediagram-svginline">
+<?xml version="1.0" encoding="utf-8"?><project name="plus-allhtml-treediagram-svginline">
 
   <target name="plus-allhtml-treediagram-svginline.init" depends="plus-allhtml-treediagram.init">
-    
+    <!-- Syntax Diagram format to be placed into XHTML output.
+         Choices: svginline, svgraster, svgobject. -->
     <condition property="plus.treediagram.format" value="svginline">
       <not>
         <isset property="plus.treediagram.format"></isset>
       </not>
     </condition>
 
-    
+    <!-- Default location for CSS that applies to treediagrams,
+         relative to root of output dir. -->
     <condition property="plus-allhtml-treediagram-svginline.csspath" value="${user.csspath}">
       <and>
         <equals arg1="${plus.treediagram.format}" arg2="svginline"></equals>
@@ -16,7 +18,8 @@
       </and>
     </condition>
 
-    
+    <!-- Default location for Javascript that processes treediagrams,
+         relative to root of output dir. -->
     <condition property="plus-allhtml-treediagram-svginline.jspath" value="js/treediagram-svg/">
       <and>
         <equals arg1="${plus.treediagram.format}" arg2="svginline"></equals>
@@ -24,7 +27,7 @@
       </and>
     </condition>
 
-    
+    <!-- JavaScript code location for dynamic tree diagrams (inline). -->
     <condition property="plus-allhtml-treediagram-svginline.js.destination" value="${output.dir}/${plus-allhtml-treediagram-svginline.jspath}">
       <and>
         <equals arg1="${plus.treediagram.format}" arg2="svginline"></equals>
@@ -32,7 +35,7 @@
       </and>
     </condition>
 
-    
+    <!-- CSS location for dynamic tree diagrams (inline) -->
     <condition property="plus-allhtml-treediagram-svginline.css.destination" value="${user.csspath.real}">
       <and>
         <equals arg1="${plus.treediagram.format}" arg2="svginline"></equals>

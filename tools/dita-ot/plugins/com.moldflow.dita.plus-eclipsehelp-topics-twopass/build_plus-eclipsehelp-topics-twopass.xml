@@ -1,4 +1,4 @@
-<project name="plus-eclipsehelp-topics-twopass">
+<?xml version="1.0" encoding="utf-8"?><project name="plus-eclipsehelp-topics-twopass">
   
   <dirname property="plus-eclipsehelp-topics-twopass.dir" file="${ant.file.plus-eclipsehelp-topics-twopass}"></dirname>
 
@@ -13,7 +13,7 @@
     </condition>
   </target>
 
-  <target name="plus-eclipsehelp-topics-twopass.dispatch" if="plus.topics.class.twopass" depends="plus-eclipsehelp-topics-twopass.check.class,plus-allhtml-syntaxdiagram.init,plus-allhtml-syntaxdiagram-svginline.copy-files,plus-allhtml-mathml.init,plus-allhtml-mathml-svginline.init,plus-allhtml-treediagram.init,plus-allhtml-treediagram-svginline.copy-files,plus-allhtml-svgobject.before.stage1,plus-allhtml-svgimage-svgobject.before.stage1,plus-allhtml-treediagram.init,plus-allhtml-svgobject.before.stage1,plus-allhtml-svgimage-svginline.before.stage1,plus-allhtml-mathml-inline.init,plus-allhtml-syntaxdiagram-svgobject.init,plus-allhtml-mathml-svgobject.init,plus-allhtml-treediagram-svgobject.init,plus-allhtml-mathml.init,plus-allhtml-syntaxdiagram.init,plus-eclipsehelp-topics-twopass.stage1.perform,plus-allhtml-mathml-svginline.call,plus-allhtml-svgobject.after.stage1,plus-allhtml-svgobject.after.stage1,plus-allhtml-mathml-svgobject.call,plus-eclipsehelp-topics-twopass.stage1.milestone,plus-allhtml-xhtml-namespace.init,plus-allhtml-xhtml-namespace.init,plus-eclipsehelp-topics-twopass.stage2.perform">
+  <target name="plus-eclipsehelp-topics-twopass.dispatch" if="plus.topics.class.twopass" depends="plus-eclipsehelp-topics-twopass.check.class,plus-allhtml-svgimage-svginline.before.stage1,plus-allhtml-mathml-svgobject.init,plus-allhtml-mathml.init,plus-allhtml-syntaxdiagram.init,plus-allhtml-mathml-inline.init,plus-allhtml-mathml-svginline.init,plus-allhtml-treediagram.init,plus-allhtml-treediagram-svgobject.init,plus-allhtml-treediagram-svginline.copy-files,plus-allhtml-svgimage-svgobject.before.stage1,plus-allhtml-svgobject.before.stage1,plus-allhtml-syntaxdiagram-svgobject.init,plus-allhtml-syntaxdiagram-svginline.copy-files,plus-eclipsehelp-topics-twopass.stage1.perform,plus-allhtml-mathml-svgobject.call,plus-allhtml-mathml-svginline.call,plus-allhtml-svgobject.after.stage1,plus-eclipsehelp-topics-twopass.stage1.milestone,plus-allhtml-xhtml-namespace.init,plus-eclipsehelp-topics-twopass.stage2.perform">
   </target>
 
   <target name="plus-eclipsehelp-topics-twopass.stage1.perform" depends="plus-eclipsehelp-topics-twopass.check.class" if="plus.topics.class.twopass">
@@ -45,14 +45,12 @@
       
 
       
-<param name="XHTML-NAMESPACE" expression="${plus.xhtml.namespace}" if="plus.xhtml.namespace">
-</param>
+<param name="XHTML-NAMESPACE" expression="${plus.xhtml.namespace}" if="plus.xhtml.namespace"></param>
 
 
 
   
-<param name="ENCODING" expression="${plus.topics.encoding}" if="plus.topics.encoding">
-</param>
+<param name="ENCODING" expression="${plus.topics.encoding}" if="plus.topics.encoding"></param>
 
       <xmlcatalog refid="dita.catalog"></xmlcatalog>
     </xslt>
@@ -64,14 +62,12 @@
       
 
       
-<param name="XHTML-NAMESPACE" expression="${plus.xhtml.namespace}" if="plus.xhtml.namespace">
-</param>
+<param name="XHTML-NAMESPACE" expression="${plus.xhtml.namespace}" if="plus.xhtml.namespace"></param>
 
 
 
   
-<param name="ENCODING" expression="${plus.topics.encoding}" if="plus.topics.encoding">
-</param>
+<param name="ENCODING" expression="${plus.topics.encoding}" if="plus.topics.encoding"></param>
 
       <xmlcatalog refid="dita.catalog"></xmlcatalog>
     </xslt>

@@ -1,13 +1,15 @@
-<project name="plus-transtype-eclipsehelp" default="dita2eclipsehelp+">
+<?xml version="1.0" encoding="utf-8"?><!-- This file is part of the DITA Open Toolkit project hosted on 
+     Sourceforge.net. See the accompanying license.txt file for 
+     applicable licenses.--><!-- (c) Copyright IBM Corp. 2006 All Rights Reserved. --><project name="plus-transtype-eclipsehelp" default="dita2eclipsehelp+">
     <property name="transtype" value="eclipsehelp+"></property>
 
     <dirname property="plus-transtype-eclipsehelp.dir" file="${ant.file.plus-transtype-eclipsehelp}"></dirname>
     
     <import file="../../build_init.xml"></import>
     <import file="../../build_preprocess.xml"></import>
-    
+    <!-- <import file="../../build_general.xml" /> -->
 	
-    <target name="dita2eclipsehelp+" depends="build-init,preprocess,plus-transtype-eclipsehelp.map.basic,copy-revflag,copy-css,plus-eclipsehelp-topics-twopass.dispatch,plus-eclipsehelp-topics-twopass.dispatch,plus-transtype-eclipsehelp.topics.basic">
+    <target name="dita2eclipsehelp+" depends="build-init,preprocess,plus-transtype-eclipsehelp.map.basic,copy-revflag,copy-css,plus-eclipsehelp-topics-twopass.dispatch,plus-transtype-eclipsehelp.topics.basic">
     </target>
 
     <target name="plus-transtype-eclipsehelp.map.basic" if="plus.map.class.basic" depends="plus-transtype-eclipsehelp.map.basic.class.fallback,plus-transtype-eclipsehelp.map.basic.init,plus-transtype-eclipsehelp.map.basic.toc,plus-transtype-eclipsehelp.map.basic.index,plus-transtype-eclipsehelp.map.basic.plugin"></target>
@@ -35,7 +37,11 @@
                 <isset property="out.ext"></isset>
             </not>
         </condition>
-
+<!--
+        <condition property="noPlugin">
+            <equals arg1="${dita.eclipse.plugin}" arg2="no" />
+        </condition>
+-->
     </target>
     
     <target name="plus-transtype-eclipsehelp.map.basic.toc" depends="plus-transtype-eclipsehelp.map.basic.init" if="plus.map.class.basic">
@@ -59,7 +65,7 @@
     </target>
 
 
-    <target name="plus-transtype-eclipsehelp.topics.basic" if="plus.topics.class.basic" depends="plus-transtype-eclipsehelp.topics.basic.class.fallback,plus-allhtml-syntaxdiagram.init,plus-allhtml-mathml.init,plus-allhtml-treediagram.init,plus-allhtml-treediagram.init,plus-allhtml-mathml.init,plus-allhtml-syntaxdiagram.init,plus-transtype-eclipsehelp.topics.basic.perform"></target>
+    <target name="plus-transtype-eclipsehelp.topics.basic" if="plus.topics.class.basic" depends="plus-transtype-eclipsehelp.topics.basic.class.fallback,plus-allhtml-mathml.init,plus-allhtml-syntaxdiagram.init,plus-allhtml-treediagram.init,plus-transtype-eclipsehelp.topics.basic.perform"></target>
 
     <target name="plus-transtype-eclipsehelp.topics.basic.class.fallback">
       <condition property="plus.topics.class.basic">

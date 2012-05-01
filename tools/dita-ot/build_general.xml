@@ -55,6 +55,86 @@
       <!-- added by William on 2009-09-03 for keyref bug #2849078 end -->
       <param name="DBG" expression="${args.debug}" if="args.debug"></param>
       
+
+      <!-- SVG image parameters. -->
+      
+<param name="plus-svgimage-format" expression="${plus.svgimage.format}" if="plus.svgimage.format"></param>
+
+
+
+      <!-- MathML parameters. -->
+      
+<param name="plus-mathml-format" expression="${plus.mathml.format}" if="plus.mathml.format"></param>
+
+
+
+
+      <!-- SVG-object parameters. -->
+      
+<param name="plus-svgobject-format" expression="${plus.svgobject.format}" if="plus.svgobject.format"></param>
+      
+<param name="plus-svgobject-raster-mimetype" expression="${plus.svgobject.raster.mimetype}" if="plus.svgobject.raster.mimetype"></param>
+      
+<param name="plus-svgobject-object-convert-to-path" expression="${plus.svgobject.object.convert-to-path}" if="plus.svgobject.object.convert-to-path"></param>
+      
+<param name="plus-svgobject-raster-imagemap" expression="${plus.svgobject.raster.imagemap}" if="plus.svgobject.raster.imagemap"></param>
+      
+<param name="plus-svgobject-path" expression="${plus.svgobject.path}" if="plus.svgobject.path"></param>
+
+
+
+      <!-- Syntax Diagram parameters. -->
+      
+<param name="plus-syntaxdiagram-format" expression="${plus.syntaxdiagram.format}" if="plus.syntaxdiagram.format"></param>
+
+
+
+
+      <!-- Tree Diagram parameters. -->
+      
+<param name="plus-treediagram-format" expression="${plus.treediagram.format}" if="plus.treediagram.format"></param>
+
+
+
+
+<param name="INCLUDEGOOGLEJS" expression="${IncludeAnalyticJS}" if="IncludeAnalyticJS"></param>
+
+
+      <!-- Tree Diagram parameters. -->
+      
+<param name="plus-allhtml-treediagram-svgobject-csspath" expression="${plus-allhtml-treediagram-svgobject.csspath}" if="plus-allhtml-treediagram-svgobject.csspath"></param>
+      
+<param name="plus-allhtml-treediagram-svgobject-jspath" expression="${plus-allhtml-treediagram-svgobject.jspath}" if="plus-allhtml-treediagram-svgobject.jspath"></param>
+
+
+
+
+      <!-- Tree Diagram parameters. -->
+      
+<param name="plus-allhtml-treediagram-svginline-csspath" expression="${plus-allhtml-treediagram-svginline.csspath}" if="plus-allhtml-treediagram-svginline.csspath"></param>
+      
+<param name="plus-allhtml-treediagram-svginline-jspath" expression="${plus-allhtml-treediagram-svginline.jspath}" if="plus-allhtml-treediagram-svginline.jspath"></param>
+
+
+
+
+      <!-- Syntax Diagram parameters. -->
+      
+<param name="plus-allhtml-syntaxdiagram-svgobject-csspath" expression="${plus-allhtml-syntaxdiagram-svgobject.csspath}" if="plus-allhtml-syntaxdiagram-svgobject.csspath"></param>
+      
+<param name="plus-allhtml-syntaxdiagram-svgobject-jspath" expression="${plus-allhtml-syntaxdiagram-svgobject.jspath}" if="plus-allhtml-syntaxdiagram-svgobject.jspath"></param>
+
+
+
+
+      <!-- Syntax Diagram parameters. -->
+      
+<param name="plus-allhtml-syntaxdiagram-svginline-csspath" expression="${plus-allhtml-syntaxdiagram-svginline.csspath}" if="plus-allhtml-syntaxdiagram-svginline.csspath"></param>
+      
+<param name="plus-allhtml-syntaxdiagram-svginline-jspath" expression="${plus-allhtml-syntaxdiagram-svginline.jspath}" if="plus-allhtml-syntaxdiagram-svginline.jspath"></param>
+
+
+
   	  <xmlcatalog refid="dita.catalog"></xmlcatalog>
     </xslt>
   </target>
@@ -98,6 +178,9 @@
       <!-- added by William on 2009-09-03 for keyref bug #2849078 end -->
       <param name="DBG" expression="${args.debug}" if="args.debug"></param>
 	  
+
+<param name="INCLUDEGOOGLEJS" expression="${IncludeAnalyticJS}" if="IncludeAnalyticJS"></param>
+
       <xmlcatalog refid="dita.catalog"></xmlcatalog>
     </xslt>
   </target>
@@ -149,6 +232,86 @@
       <!-- added by William on 2009-09-03 for keyref bug #2849078 end -->
       <param name="DBG" expression="${args.debug}" if="args.debug"></param>
       
+
+      <!-- SVG image parameters. -->
+      
+<param name="plus-svgimage-format" expression="${plus.svgimage.format}" if="plus.svgimage.format"></param>
+
+
+
+      <!-- MathML parameters. -->
+      
+<param name="plus-mathml-format" expression="${plus.mathml.format}" if="plus.mathml.format"></param>
+
+
+
+
+      <!-- SVG-object parameters. -->
+      
+<param name="plus-svgobject-format" expression="${plus.svgobject.format}" if="plus.svgobject.format"></param>
+      
+<param name="plus-svgobject-raster-mimetype" expression="${plus.svgobject.raster.mimetype}" if="plus.svgobject.raster.mimetype"></param>
+      
+<param name="plus-svgobject-object-convert-to-path" expression="${plus.svgobject.object.convert-to-path}" if="plus.svgobject.object.convert-to-path"></param>
+      
+<param name="plus-svgobject-raster-imagemap" expression="${plus.svgobject.raster.imagemap}" if="plus.svgobject.raster.imagemap"></param>
+      
+<param name="plus-svgobject-path" expression="${plus.svgobject.path}" if="plus.svgobject.path"></param>
+
+
+
+      <!-- Syntax Diagram parameters. -->
+      
+<param name="plus-syntaxdiagram-format" expression="${plus.syntaxdiagram.format}" if="plus.syntaxdiagram.format"></param>
+
+
+
+
+      <!-- Tree Diagram parameters. -->
+      
+<param name="plus-treediagram-format" expression="${plus.treediagram.format}" if="plus.treediagram.format"></param>
+
+
+
+
+<param name="INCLUDEGOOGLEJS" expression="${IncludeAnalyticJS}" if="IncludeAnalyticJS"></param>
+
+
+      <!-- Tree Diagram parameters. -->
+      
+<param name="plus-allhtml-treediagram-svgobject-csspath" expression="${plus-allhtml-treediagram-svgobject.csspath}" if="plus-allhtml-treediagram-svgobject.csspath"></param>
+      
+<param name="plus-allhtml-treediagram-svgobject-jspath" expression="${plus-allhtml-treediagram-svgobject.jspath}" if="plus-allhtml-treediagram-svgobject.jspath"></param>
+
+
+
+
+      <!-- Tree Diagram parameters. -->
+      
+<param name="plus-allhtml-treediagram-svginline-csspath" expression="${plus-allhtml-treediagram-svginline.csspath}" if="plus-allhtml-treediagram-svginline.csspath"></param>
+      
+<param name="plus-allhtml-treediagram-svginline-jspath" expression="${plus-allhtml-treediagram-svginline.jspath}" if="plus-allhtml-treediagram-svginline.jspath"></param>
+
+
+
+
+      <!-- Syntax Diagram parameters. -->
+      
+<param name="plus-allhtml-syntaxdiagram-svgobject-csspath" expression="${plus-allhtml-syntaxdiagram-svgobject.csspath}" if="plus-allhtml-syntaxdiagram-svgobject.csspath"></param>
+      
+<param name="plus-allhtml-syntaxdiagram-svgobject-jspath" expression="${plus-allhtml-syntaxdiagram-svgobject.jspath}" if="plus-allhtml-syntaxdiagram-svgobject.jspath"></param>
+
+
+
+
+      <!-- Syntax Diagram parameters. -->
+      
+<param name="plus-allhtml-syntaxdiagram-svginline-csspath" expression="${plus-allhtml-syntaxdiagram-svginline.csspath}" if="plus-allhtml-syntaxdiagram-svginline.csspath"></param>
+      
+<param name="plus-allhtml-syntaxdiagram-svginline-jspath" expression="${plus-allhtml-syntaxdiagram-svginline.jspath}" if="plus-allhtml-syntaxdiagram-svginline.jspath"></param>
+
+
+
       <!--New,To generate&copy all dita files in the inputmap.dir,not all files in dita.temp.dir -->
       <mapper type="regexp" from="^(${tempdirToinputmapdir.relative.value})(.*?)(\.(xml|dita))$$" to="\2${out.ext}"></mapper>
       <xmlcatalog refid="dita.catalog"></xmlcatalog>
@@ -194,6 +357,9 @@
       <!-- added by William on 2009-09-03 for keyref bug #2849078 end -->
       <param name="DBG" expression="${args.debug}" if="args.debug"></param>
 	  
+
+<param name="INCLUDEGOOGLEJS" expression="${IncludeAnalyticJS}" if="IncludeAnalyticJS"></param>
+
       <mapper type="regexp" from="^(${tempdirToinputmapdir.relative.value})(.*?)(\.(xml|dita))$$" to="\2${out.ext}"></mapper>
       <xmlcatalog refid="dita.catalog"></xmlcatalog>
     </xslt>
@@ -260,6 +426,86 @@
       <!-- added by William on 2009-09-03 for keyref bug #2849078 end -->
       <param name="DBG" expression="${args.debug}" if="args.debug"></param>
       
+
+      <!-- SVG image parameters. -->
+      
+<param name="plus-svgimage-format" expression="${plus.svgimage.format}" if="plus.svgimage.format"></param>
+
+
+
+      <!-- MathML parameters. -->
+      
+<param name="plus-mathml-format" expression="${plus.mathml.format}" if="plus.mathml.format"></param>
+
+
+
+
+      <!-- SVG-object parameters. -->
+      
+<param name="plus-svgobject-format" expression="${plus.svgobject.format}" if="plus.svgobject.format"></param>
+      
+<param name="plus-svgobject-raster-mimetype" expression="${plus.svgobject.raster.mimetype}" if="plus.svgobject.raster.mimetype"></param>
+      
+<param name="plus-svgobject-object-convert-to-path" expression="${plus.svgobject.object.convert-to-path}" if="plus.svgobject.object.convert-to-path"></param>
+      
+<param name="plus-svgobject-raster-imagemap" expression="${plus.svgobject.raster.imagemap}" if="plus.svgobject.raster.imagemap"></param>
+      
+<param name="plus-svgobject-path" expression="${plus.svgobject.path}" if="plus.svgobject.path"></param>
+
+
+
+      <!-- Syntax Diagram parameters. -->
+      
+<param name="plus-syntaxdiagram-format" expression="${plus.syntaxdiagram.format}" if="plus.syntaxdiagram.format"></param>
+
+
+
+
+      <!-- Tree Diagram parameters. -->
+      
+<param name="plus-treediagram-format" expression="${plus.treediagram.format}" if="plus.treediagram.format"></param>
+
+
+
+
+<param name="INCLUDEGOOGLEJS" expression="${IncludeAnalyticJS}" if="IncludeAnalyticJS"></param>
+
+
+      <!-- Tree Diagram parameters. -->
+      
+<param name="plus-allhtml-treediagram-svgobject-csspath" expression="${plus-allhtml-treediagram-svgobject.csspath}" if="plus-allhtml-treediagram-svgobject.csspath"></param>
+      
+<param name="plus-allhtml-treediagram-svgobject-jspath" expression="${plus-allhtml-treediagram-svgobject.jspath}" if="plus-allhtml-treediagram-svgobject.jspath"></param>
+
+
+
+
+      <!-- Tree Diagram parameters. -->
+      
+<param name="plus-allhtml-treediagram-svginline-csspath" expression="${plus-allhtml-treediagram-svginline.csspath}" if="plus-allhtml-treediagram-svginline.csspath"></param>
+      
+<param name="plus-allhtml-treediagram-svginline-jspath" expression="${plus-allhtml-treediagram-svginline.jspath}" if="plus-allhtml-treediagram-svginline.jspath"></param>
+
+
+
+
+      <!-- Syntax Diagram parameters. -->
+      
+<param name="plus-allhtml-syntaxdiagram-svgobject-csspath" expression="${plus-allhtml-syntaxdiagram-svgobject.csspath}" if="plus-allhtml-syntaxdiagram-svgobject.csspath"></param>
+      
+<param name="plus-allhtml-syntaxdiagram-svgobject-jspath" expression="${plus-allhtml-syntaxdiagram-svgobject.jspath}" if="plus-allhtml-syntaxdiagram-svgobject.jspath"></param>
+
+
+
+
+      <!-- Syntax Diagram parameters. -->
+      
+<param name="plus-allhtml-syntaxdiagram-svginline-csspath" expression="${plus-allhtml-syntaxdiagram-svginline.csspath}" if="plus-allhtml-syntaxdiagram-svginline.csspath"></param>
+      
+<param name="plus-allhtml-syntaxdiagram-svginline-jspath" expression="${plus-allhtml-syntaxdiagram-svginline.jspath}" if="plus-allhtml-syntaxdiagram-svginline.jspath"></param>
+
+
+
       <xmlcatalog refid="dita.catalog"></xmlcatalog>
     </xslt>
   </target>
@@ -302,6 +548,9 @@
       <!-- added by William on 2009-09-03 for keyref bug #2849078 end -->
       <param name="DBG" expression="${args.debug}" if="args.debug"></param>
 	  
+
+<param name="INCLUDEGOOGLEJS" expression="${IncludeAnalyticJS}" if="IncludeAnalyticJS"></param>
+
       <xmlcatalog refid="dita.catalog"></xmlcatalog>
     </xslt>
   </target>

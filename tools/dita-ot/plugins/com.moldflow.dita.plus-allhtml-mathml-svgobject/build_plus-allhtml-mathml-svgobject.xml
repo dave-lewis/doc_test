@@ -1,7 +1,7 @@
-<project name="plus-allhtml-mathml-svgobject">
+<?xml version="1.0" encoding="utf-8"?><project name="plus-allhtml-mathml-svgobject">
 
   <target name="plus-allhtml-mathml-svgobject.init" depends="plus-allhtml-mathml.init,plus-allhtml-svgobject.init">
-    
+    <!-- MathML format to be placed into XHTML output. -->
     <condition property="plus.mathml.format" value="svgobject">
       <not>
         <isset property="plus.mathml.format"></isset>

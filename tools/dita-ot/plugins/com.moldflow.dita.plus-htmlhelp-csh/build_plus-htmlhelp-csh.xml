@@ -1,4 +1,4 @@
-<project name="plus-htmlhelp-csh">
+<?xml version="1.0" encoding="utf-8"?><project name="plus-htmlhelp-csh">
 
   <dirname property="plus-htmlhelp-csh.dir" file="${ant.file.plus-htmlhelp-csh}"></dirname>
 

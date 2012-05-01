@@ -1,4 +1,4 @@
-<project name="plus-htmlhelp-topics-twopass">
+<?xml version="1.0" encoding="utf-8"?><project name="plus-htmlhelp-topics-twopass">
   
   <dirname property="plus-htmlhelp-topics-twopass.dir" file="${ant.file.plus-htmlhelp-topics-twopass}"></dirname>
 
@@ -13,7 +13,7 @@
     </condition>
   </target>
 
-  <target name="plus-htmlhelp-topics-twopass.dispatch" if="plus.topics.class.twopass" depends="plus-htmlhelp-topics-twopass.check.class,plus-allhtml-syntaxdiagram.init,plus-allhtml-mathml.init,plus-allhtml-treediagram.init,plus-allhtml-svgobject.before.stage1,plus-allhtml-svgimage-svgobject.before.stage1,plus-allhtml-treediagram.init,plus-allhtml-svgobject.before.stage1,plus-allhtml-syntaxdiagram-svgobject.init,plus-allhtml-mathml-svgobject.init,plus-allhtml-treediagram-svgobject.init,plus-allhtml-mathml.init,plus-allhtml-syntaxdiagram.init,plus-htmlhelp-topics-twopass.stage1.perform,plus-allhtml-svgobject.after.stage1,plus-allhtml-svgobject.after.stage1,plus-allhtml-mathml-svgobject.call,plus-htmlhelp-topics-twopass.stage1.milestone,plus-htmlhelp-currentencoding.topics.defaultencoding,plus-htmlhelp-topics-twopass.stage2.perform">
+  <target name="plus-htmlhelp-topics-twopass.dispatch" if="plus.topics.class.twopass" depends="plus-htmlhelp-topics-twopass.check.class,plus-allhtml-mathml-svgobject.init,plus-allhtml-mathml.init,plus-allhtml-syntaxdiagram.init,plus-allhtml-treediagram.init,plus-allhtml-treediagram-svgobject.init,plus-allhtml-svgimage-svgobject.before.stage1,plus-allhtml-svgobject.before.stage1,plus-allhtml-syntaxdiagram-svgobject.init,plus-htmlhelp-topics-twopass.stage1.perform,plus-allhtml-mathml-svgobject.call,plus-allhtml-svgobject.after.stage1,plus-htmlhelp-topics-twopass.stage1.milestone,plus-htmlhelp-currentencoding.topics.defaultencoding,plus-htmlhelp-topics-twopass.stage2.perform">
   </target>
 
   <target name="plus-htmlhelp-topics-twopass.stage1.perform" depends="plus-htmlhelp-topics-twopass.check.class" if="plus.topics.class.twopass">
@@ -44,10 +44,9 @@
     <xslt processor="trax" basedir="${dita.temp.dir}" destdir="${output.dir}" includes="${fullditatopiclist} ${chunkedtopiclist}" extension="${out.ext}" style="${plus-htmlhelp-topics-twopass.dir}/xsl/stage2-html-shell.xsl" classpathref="dost.class.path">
       
   
-<param name="ENCODING" expression="${plus.topics.encoding}" if="plus.topics.encoding">
-</param>
+<param name="ENCODING" expression="${plus.topics.encoding}" if="plus.topics.encoding"></param>
 
-      
+      <!--<xmlcatalog refid="dita.catalog"/>-->
     </xslt>
   </target>
 
@@ -56,10 +55,9 @@
       <regexpmapper from="^(${tempdirToinputmapdir.relative.value})(.*?)(\.(xml|dita))$$" to="\2${out.ext}"></regexpmapper>
       
   
-<param name="ENCODING" expression="${plus.topics.encoding}" if="plus.topics.encoding">
-</param>
+<param name="ENCODING" expression="${plus.topics.encoding}" if="plus.topics.encoding"></param>
 
-      
+      <!--<xmlcatalog refid="dita.catalog"/>-->
     </xslt>
   </target>
 

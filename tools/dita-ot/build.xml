@@ -9,6 +9,10 @@
         
   <path id="dost.class.path">
     
+<pathelement location="${dita.dir}${file.separator}plugins/com.moldflow.dita.mathml2svg/lib/mml2svg.jar"/>
+<pathelement location="${dita.dir}${file.separator}plugins/com.moldflow.dita.xslt-hash/lib/xslt-hash.jar"/>
+<pathelement location="${dita.dir}${file.separator}plugins/com.moldflow.dita.plus-htmlhelp-currentencoding/lib/currentencoding.jar"/>
+<pathelement location="${dita.dir}${file.separator}plugins/com.moldflow.dita.svgobject/lib/svgrenderingtranscoder.jar"/>
 <pathelement location="${dita.dir}${file.separator}demo/fo/lib/fo.jar"/>
     <pathelement location="${dita.dir}${file.separator}lib${file.separator}dost.jar"></pathelement>
   </path>
@@ -17,7 +21,7 @@
     <dita-ot-fail id="DOTA001F">
       <condition>
         <and>
-          <not><equals arg1="${transtype}" arg2="xhtml" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="javahelp" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="pdf" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="legacypdf" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="htmlhelp" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="docbook" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="wordrtf" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="tocjs" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="pdf2" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="odt" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="eclipsehelp" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="eclipsecontent" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="troff" casesensitive="false"/></not>
+          <not><equals arg1="${transtype}" arg2="eclipsecontent" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="xhtml+" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="eclipsehelp+" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="html+" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="htmlhelp+" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="docbook" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="xhtml" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="htmlhelp" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="pdf" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="javahelp" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="tocjs" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="wordrtf" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="eclipsehelp" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="pdf2" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="troff" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="odt" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="legacypdf" casesensitive="false"/></not>
         </and>
       </condition>
     </dita-ot-fail>
@@ -43,8 +47,26 @@
   
   <target name="dita-preprocess" depends="start-process, init-logger, init-URIResolver, output-version, check-arg, output-deprecated-msg, output-css-warn-message, preprocess"></target>
 
-  <property name='dita.plugin.org.dita.javahelp.dir' location='${dita.dir}'/><property name='dita.plugin.org.dita.pdf.dir' location='${dita.dir}\plugins/org.dita.pdf'/><property name='dita.plugin.org.dita.legacypdf.dir' location='${dita.dir}\demo/legacypdf'/><property name='dita.plugin.org.dita.base.dir' location='${dita.dir}'/><property name='dita.plugin.org.dita.htmlhelp.dir' location='${dita.dir}'/><property name='dita.plugin.org.dita.specialization.eclipsemap.dir' location='${dita.dir}\demo/eclipsemap'/><property name='dita.plugin.org.dita.specialization.h2d.dir' location='${dita.dir}\demo/h2d'/><property name='dita.plugin.org.dita.docbook.dir' location='${dita.dir}'/><property name='dita.plugin.org.dita.wordrtf.dir' location='${dita.dir}'/><property name='dita.plugin.com.sophos.tocjs.dir' location='${dita.dir}\demo/tocjs'/><property name='dita.plugin.org.dita.specialization.dita132.dir' location='${dita.dir}\demo/dita132'/><property name='dita.plugin.org.dita.pdf2.dir' location='${dita.dir}\demo/fo'/><property name='dita.plugin.org.dita.odt.dir' location='${dita.dir}'/><property name='dita.plugin.org.dita.xhtml.dir' location='${dita.dir}'/><property name='dita.plugin.org.dita.specialization.dita11.dir' location='${dita.dir}\demo/dita11'/><property name='dita.plugin.org.dita.eclipsehelp.dir' location='${dita.dir}'/><property name='dita.plugin.org.dita.eclipsecontent.dir' location='${dita.dir}'/><property name='dita.plugin.org.dita.troff.dir' location='${dita.dir}'/>
+  <property name='dita.plugin.org.dita.eclipsecontent.dir' location='${dita.dir}'/><property name='dita.plugin.com.moldflow.dita.plus-transtype-xhtml.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-transtype-xhtml'/><property name='dita.plugin.com.moldflow.dita.plus-allhtml-svgimage-svginline.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-allhtml-svgimage-svginline'/><property name='dita.plugin.com.moldflow.dita.plus-htmlhelp-hhp-windows-configfile.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-htmlhelp-hhp-windows-configfile'/><property name='dita.plugin.com.moldflow.dita.mathml2svg.dir' location='${dita.dir}\plugins/com.moldflow.dita.mathml2svg'/><property name='dita.plugin.com.moldflow.dita.plus-transtype-anyhtml.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-transtype-anyhtml'/><property name='dita.plugin.com.moldflow.dita.plus-allhtml-mathml-svgobject.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-allhtml-mathml-svgobject'/><property name='dita.plugin.com.moldflow.dita.xslt-hash.dir' location='${dita.dir}\plugins/com.moldflow.dita.xslt-hash'/><property name='dita.plugin.com.moldflow.dita.plus-transtype-eclipsehelp.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-transtype-eclipsehelp'/><property name='dita.plugin.com.moldflow.dita.plus-allhtml-mathml.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-allhtml-mathml'/><property name='dita.plugin.org.dita.docbook.dir' location='${dita.dir}'/><property name='dita.plugin.com.moldflow.dita.plus-allhtml-syntaxdiagram.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-allhtml-syntaxdiagram'/><property name='dita.plugin.org.dita.specialization.eclipsemap.dir' location='${dita.dir}\demo/eclipsemap'/><property name='dita.plugin.org.dita.base.dir' location='${dita.dir}'/><property name='dita.plugin.org.dita.htmlhelp.dir' location='${dita.dir}'/><property name='dita.plugin.com.moldflow.dita.syntaxdiagram2svg.dir' location='${dita.dir}\plugins/com.moldflow.dita.syntaxdiagram2svg'/><property name='dita.plugin.com.moldflow.dita.plus-transtype-htmlhelp.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-transtype-htmlhelp'/><property name='dita.plugin.org.dita.pdf.dir' location='${dita.dir}\plugins/org.dita.pdf'/><property name='dita.plugin.com.moldflow.dita.plus-allhtml-svgimage.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-allhtml-svgimage'/><property name='dita.plugin.org.dita.javahelp.dir' location='${dita.dir}'/><property name='dita.plugin.com.moldflow.dita.plus-allhtml-xhtml-namespace.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-allhtml-xhtml-namespace'/><property name='dita.plugin.com.moldflow.dita.plus-allhtml-mathml-inline.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-allhtml-mathml-inline'/><property name='dita.plugin.org.dita.specialization.dita11.dir' location='${dita.dir}\demo/dita11'/><property name='dita.plugin.com.moldflow.dita.plus-htmlhelp-currentencoding.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-htmlhelp-currentencoding'/><property name='dita.plugin.org.dita.specialization.dita132.dir' location='${dita.dir}\demo/dita132'/><property name='dita.plugin.com.sophos.tocjs.dir' location='${dita.dir}\demo/tocjs'/><property name='dita.plugin.com.moldflow.dita.plus-allhtml-mathml-svginline.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-allhtml-mathml-svginline'/><property name='dita.plugin.com.moldflow.dita.doctype.svg.dir' location='${dita.dir}\plugins/com.moldflow.dita.doctype.svg'/><property name='dita.plugin.org.dita.wordrtf.dir' location='${dita.dir}'/><property name='dita.plugin.com.moldflow.dita.plus-htmlhelp-alias-map.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-htmlhelp-alias-map'/><property name='dita.plugin.com.moldflow.dita.plus-allhtml-treediagram.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-allhtml-treediagram'/><property name='dita.plugin.com.acl.branding.dir' location='${dita.dir}\demo/acl_branding'/><property name='dita.plugin.com.moldflow.dita.plus-htmlhelp-csh-resourceid.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-htmlhelp-csh-resourceid'/><property name='dita.plugin.com.moldflow.dita.plus-allhtml-topic2html.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-allhtml-topic2html'/><property name='dita.plugin.com.moldflow.dita.plus-htmlhelp-hhp-modular.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-htmlhelp-hhp-modular'/><property name='dita.plugin.com.moldflow.dita.plus-html-topics-twopass.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-html-topics-twopass'/><property name='dita.plugin.com.moldflow.dita.plus-allhtml-treediagram-svgobject.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-allhtml-treediagram-svgobject'/><property name='dita.plugin.com.moldflow.dita.plus-htmlhelp-topics-twopass.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-htmlhelp-topics-twopass'/><property name='dita.plugin.com.moldflow.dita.plus-preprocess-breadcrumbs.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-preprocess-breadcrumbs'/><property name='dita.plugin.com.moldflow.dita.plus-allhtml-treediagram-svginline.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-allhtml-treediagram-svginline'/><property name='dita.plugin.org.dita.eclipsehelp.dir' location='${dita.dir}'/><property name='dita.plugin.com.moldflow.dita.plus-allhtml-encoding.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-allhtml-encoding'/><property name='dita.plugin.com.moldflow.dita.svgobject.dir' location='${dita.dir}\plugins/com.moldflow.dita.svgobject'/><property name='dita.plugin.com.moldflow.dita.treediagram2svg.dir' location='${dita.dir}\plugins/com.moldflow.dita.treediagram2svg'/><property name='dita.plugin.com.moldflow.dita.plus-anyhtml-topics-twopass.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-anyhtml-topics-twopass'/><property name='dita.plugin.org.dita.pdf2.dir' location='${dita.dir}\demo/fo'/><property name='dita.plugin.com.moldflow.dita.plus-allhtml-svgimage-svgobject.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-allhtml-svgimage-svgobject'/><property name='dita.plugin.com.moldflow.dita.specialization.mathml2.dir' location='${dita.dir}\plugins/com.moldflow.dita.specialization.mathml2'/><property name='dita.plugin.com.moldflow.dita.doctype.xhtml.dir' location='${dita.dir}\plugins/com.moldflow.dita.doctype.xhtml'/><property name='dita.plugin.org.dita.specialization.h2d.dir' location='${dita.dir}\demo/h2d'/><property name='dita.plugin.com.moldflow.dita.plus-allhtml-svgobject.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-allhtml-svgobject'/><property name='dita.plugin.com.moldflow.dita.plus-eclipsehelp-topics-twopass.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-eclipsehelp-topics-twopass'/><property name='dita.plugin.com.moldflow.dita.plus-allhtml-syntaxdiagram-svgobject.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-allhtml-syntaxdiagram-svgobject'/><property name='dita.plugin.org.dita.troff.dir' location='${dita.dir}'/><property name='dita.plugin.com.moldflow.dita.plus-htmlhelp-csh.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-htmlhelp-csh'/><property name='dita.plugin.com.moldflow.dita.plus-transtype-html.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-transtype-html'/><property name='dita.plugin.org.dita.xhtml.dir' location='${dita.dir}'/><property name='dita.plugin.org.dita.odt.dir' location='${dita.dir}'/><property name='dita.plugin.com.moldflow.dita.plus-allhtml-syntaxdiagram-svginline.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-allhtml-syntaxdiagram-svginline'/><property name='dita.plugin.com.moldflow.dita.plus-htmlhelp-includefile.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-htmlhelp-includefile'/><property name='dita.plugin.com.moldflow.dita.plus-allhtml-remodel.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-allhtml-remodel'/><property name='dita.plugin.com.moldflow.dita.plus-xhtml-topics-twopass.dir' location='${dita.dir}\plugins/com.moldflow.dita.plus-xhtml-topics-twopass'/><property name='dita.plugin.org.dita.legacypdf.dir' location='${dita.dir}\demo/legacypdf'/><property name='dita.plugin.com.moldflow.dita.specialization.tree-d.dir' location='${dita.dir}\plugins/com.moldflow.dita.specialization.tree-d'/>
   <!-- This file is part of the DITA Open Toolkit project hosted on 
+  Sourceforge.net. See the accompanying license.txt file for 
+  applicable licenses.--><!-- (c) Copyright IBM Corp. 2011 All Rights Reserved. -->
+  
+<import file="build_dita2eclipsecontent.xml"></import>
+<!-- This file is part of the DITA Open Toolkit project hosted on 
+  Sourceforge.net. See the accompanying license.txt file for 
+  applicable licenses.--><!-- (c) Copyright IBM Corp. 2011 All Rights Reserved. -->
+  
+<import file="build_dita2docbook.xml"></import>
+<!-- This file is part of the DITA Open Toolkit project hosted on 
+    Sourceforge.net. See the accompanying license.txt file for 
+    applicable licenses.--><!--
+    | (C) Copyright IBM Corporation 2006. All Rights Reserved.
+    *-->
+  
+  <!--property name="dita.eclipse.plugin" value="no"/-->
+    
+<!-- This file is part of the DITA Open Toolkit project hosted on 
   Sourceforge.net. See the accompanying license.txt file for 
   applicable licenses.--><!-- (c) Copyright IBM Corp. 2011 All Rights Reserved. -->
   
@@ -55,7 +77,154 @@
   Sourceforge.net. See the accompanying license.txt file for 
   applicable licenses.--><!-- (c) Copyright IBM Corp. 2011 All Rights Reserved. -->
   
+<import file="build_dita2htmlhelp.xml"></import>
+<!-- This file is part of the DITA Open Toolkit project hosted on 
+  Sourceforge.net. See the accompanying license.txt file for 
+  applicable licenses.--><!-- (c) Copyright IBM Corp. 2011 All Rights Reserved. -->
+  
 <import file="build_dita2javahelp.xml"></import>
+<!-- 
+  This file is part of the DITA Open Toolkit project hosted on
+  Sourceforge.net. See the accompanying license.txt file for
+  applicable licenses.
+  
+  (C) Copyright Shawn McKenzie, 2007. All Rights Reserved.
+
+  UPDATES:
+    20110817 RDA: Several changes:
+        * Use property dita.plugin.com.sophos.tocjs.dir (remove hard-coded demo/ dir)
+        * Original design only works if $output.file is set in an Ant file, and
+          if XHTML is created independently. Refactoring to use that original
+          processing when $output.file is specified; otherwise:
+          1) Return HTML files along with navigation
+          2) Return default frameset (with name based on map name)
+          3) Set $output.file to a default value of toctree.js
+          4) Return supporting JS and CSS files for the default frameset
+  *-->
+
+  
+<target name="dita2tocjs" depends="dita-preprocess, tocjsInit, map2tocjs, topic2tocjs, tocjsDefaultOutput">
+  </target>
+
+  
+<target name="tocjsInit">
+      
+<condition property="dita.plugin.com.sophos.tocjs.copydefaults" value="true">
+          
+<not>
+              
+<isset property="output.file"></isset>
+          </not>
+      </condition>
+      
+<condition property="output.file" value="${output.dir}${file.separator}toctree.js">
+          
+<not>
+              
+<isset property="output.file"></isset>
+          </not>
+      </condition>
+  </target>
+
+  
+<target name="topic2tocjs" if="noMap" depends="dita-preprocess">
+    
+<antcall target="dita.map.tocjs">
+      <!-- No real support for tocjs on a single topic, only for map -->
+    </antcall>
+    
+<echo>The TocJS output type only supports ditamap files as input.</echo>
+  </target>
+
+  
+<target name="map2tocjs" unless="noMap" depends="dita-preprocess">
+    
+<antcall target="dita.map.tocjs">
+      
+<param name="input" value="${dita.temp.dir}${file.separator}${user.input.file}"></param>
+    </antcall>
+  </target>
+
+  
+<target name="dita.map.tocjs" description="generate merged for tocjs">
+    
+<xslt processor="trax" in="${input}" out="${output.file}" style="${dita.plugin.com.sophos.tocjs.dir}/xsl/tocjs.xsl">
+      
+<param name="contentwin" expression="${content.frame}" if="content.frame"></param>
+      
+<param name="ditaext" expression="${dita.extname}"></param>
+      
+<param name="htmlext" expression="${out.ext}"></param>
+    </xslt>
+  </target>
+
+  
+<target name="tocjsDefaultOutput" if="dita.plugin.com.sophos.tocjs.copydefaults">
+      <!-- Create usable output for people trying tocjs for the first time -->
+      
+<antcall target="tocjsDefaultXhtmlOutput"></antcall>
+      
+<antcall target="tocjsDefaultFrameset"></antcall>
+      <!-- Copy default JS and related files -->
+      
+<copy todir="${output.dir}">
+<fileset dir="${dita.plugin.com.sophos.tocjs.dir}${file.separator}basefiles">
+<include name="**/*"></include></fileset></copy>
+  </target>
+
+  
+<target name="tocjsDefaultXhtmlOutput" depends="dita.map.xhtml, copy-revflag, copy-css , dita.topics.xhtml, dita.inner.topics.xhtml, dita.outer.topics.xhtml">
+      <!-- Preprocess has already completed based on original dependencies;
+           this target continues to XHTML for default output. Seems very 
+           indirect way to create the XHTML, so would like something better,
+           but do not want to add new XHTML processing for people using
+           the original dita2tocjs target. -->
+  </target>
+
+  
+<target name="tocjsDefaultFrameset" if="dita.plugin.com.sophos.tocjs.copydefaults">
+      <!-- Create the default frameset itself -->
+      
+<condition property="out.ext" value=".html">
+          
+<not>
+              
+<isset property="out.ext"></isset>
+          </not>
+      </condition>
+      
+<xslt processor="trax" basedir="${dita.temp.dir}" destdir="${output.dir}" includesfile="${dita.temp.dir}${file.separator}${user.input.file.listfile}" extension="${out.ext}" style="${dita.plugin.com.sophos.tocjs.dir}${file.separator}xsl${file.separator}frameset.xsl">
+  	    
+<excludesfile name="${dita.temp.dir}${file.separator}${resourceonlyfile}" if="resourceonlyfile"></excludesfile>
+        
+<param name="DITAEXT" expression="${dita.ext}" if="dita.ext"></param>
+        
+<param name="OUTEXT" expression="${out.ext}" if="out.ext"></param>
+        
+<param name="CSSPATH" expression="${CSSPATH}" if="csspath"></param>
+      </xslt>
+  </target>
+
+<!-- This file is part of the DITA Open Toolkit project hosted on 
+  Sourceforge.net. See the accompanying license.txt file for 
+  applicable licenses.--><!-- (c) Copyright IBM Corp. 2011 All Rights Reserved. -->
+  
+<import file="build_dita2wordrtf.xml"></import>
+<!-- This file is part of the DITA Open Toolkit project hosted on 
+  Sourceforge.net. See the accompanying license.txt file for 
+  applicable licenses.--><!-- (c) Copyright IBM Corp. 2011 All Rights Reserved. -->
+  
+<import file="build_dita2eclipsehelp.xml"></import>
+<!-- This file is part of the DITA Open Toolkit project hosted on 
+  Sourceforge.net. See the accompanying license.txt file for 
+  applicable licenses.--><!-- (c) Copyright IBM Corp. 2011 All Rights Reserved. -->
+  
+<import file="build_dita2troff.xml"></import>
+<!-- This file is part of the DITA Open Toolkit project hosted on 
+  Sourceforge.net. See the accompanying license.txt file for 
+  applicable licenses.--><!-- (c) Copyright IBM Corp. 2011 All Rights Reserved. -->
+  
+<import file="build_dita2odt.xml"></import>
 <!-- This file is part of the DITA Open Toolkit project hosted on 
     Sourceforge.net. See the accompanying license.txt file for 
     applicable licenses.--><!-- (c) Copyright IBM Corp. 2006 All Rights Reserved. -->
@@ -200,177 +369,111 @@
             </xslt>
         </target>
         
-    <!-- This file is part of the DITA Open Toolkit project hosted on 
-  Sourceforge.net. See the accompanying license.txt file for 
-  applicable licenses.--><!-- (c) Copyright IBM Corp. 2011 All Rights Reserved. -->
-  
-<import file="build_dita2htmlhelp.xml"></import>
-<!-- This file is part of the DITA Open Toolkit project hosted on 
-    Sourceforge.net. See the accompanying license.txt file for 
-    applicable licenses.--><!--
-    | (C) Copyright IBM Corporation 2006. All Rights Reserved.
-    *-->
-  
-  <!--property name="dita.eclipse.plugin" value="no"/-->
     
-<!-- This file is part of the DITA Open Toolkit project hosted on 
-  Sourceforge.net. See the accompanying license.txt file for 
-  applicable licenses.--><!-- (c) Copyright IBM Corp. 2011 All Rights Reserved. -->
   
-<import file="build_dita2docbook.xml"></import>
-<!-- This file is part of the DITA Open Toolkit project hosted on 
-  Sourceforge.net. See the accompanying license.txt file for 
-  applicable licenses.--><!-- (c) Copyright IBM Corp. 2011 All Rights Reserved. -->
-  
-<import file="build_dita2wordrtf.xml"></import>
-<!-- 
-  This file is part of the DITA Open Toolkit project hosted on
-  Sourceforge.net. See the accompanying license.txt file for
-  applicable licenses.
-  
-  (C) Copyright Shawn McKenzie, 2007. All Rights Reserved.
-
-  UPDATES:
-    20110817 RDA: Several changes:
-        * Use property dita.plugin.com.sophos.tocjs.dir (remove hard-coded demo/ dir)
-        * Original design only works if $output.file is set in an Ant file, and
-          if XHTML is created independently. Refactoring to use that original
-          processing when $output.file is specified; otherwise:
-          1) Return HTML files along with navigation
-          2) Return default frameset (with name based on map name)
-          3) Set $output.file to a default value of toctree.js
-          4) Return supporting JS and CSS files for the default frameset
-  *-->
 
   
-<target name="dita2tocjs" depends="dita-preprocess, tocjsInit, map2tocjs, topic2tocjs, tocjsDefaultOutput">
-  </target>
+<import file="plugins/com.moldflow.dita.plus-allhtml-topic2html/build_plus-allhtml-topic2html.xml"></import>
+
 
   
-<target name="tocjsInit">
-      
-<condition property="dita.plugin.com.sophos.tocjs.copydefaults" value="true">
-          
-<not>
-              
-<isset property="output.file"></isset>
-          </not>
-      </condition>
-      
-<condition property="output.file" value="${output.dir}${file.separator}toctree.js">
-          
-<not>
-              
-<isset property="output.file"></isset>
-          </not>
-      </condition>
-  </target>
+<import file="plugins/com.moldflow.dita.plus-transtype-xhtml/build_plus-transtype-xhtml.xml"></import>
 
   
-<target name="topic2tocjs" if="noMap" depends="dita-preprocess">
-    
-<antcall target="dita.map.tocjs">
-      <!-- No real support for tocjs on a single topic, only for map -->
-    </antcall>
-    
-<echo>The TocJS output type only supports ditamap files as input.</echo>
-  </target>
+<import file="plugins/com.moldflow.dita.plus-xhtml-topics-twopass/build_plus-xhtml-topics-twopass.xml"></import>
+
 
   
-<target name="map2tocjs" unless="noMap" depends="dita-preprocess">
-    
-<antcall target="dita.map.tocjs">
-      
-<param name="input" value="${dita.temp.dir}${file.separator}${user.input.file}"></param>
-    </antcall>
-  </target>
+<import file="plugins/com.moldflow.dita.plus-transtype-eclipsehelp/build_plus-transtype-eclipsehelp.xml"></import>
 
   
-<target name="dita.map.tocjs" description="generate merged for tocjs">
-    
-<xslt processor="trax" in="${input}" out="${output.file}" style="${dita.plugin.com.sophos.tocjs.dir}/xsl/tocjs.xsl">
-      
-<param name="contentwin" expression="${content.frame}" if="content.frame"></param>
-      
-<param name="ditaext" expression="${dita.extname}"></param>
-      
-<param name="htmlext" expression="${out.ext}"></param>
-    </xslt>
-  </target>
+<import file="plugins/com.moldflow.dita.plus-eclipsehelp-topics-twopass/build_plus-eclipsehelp-topics-twopass.xml"></import>
 
   
-<target name="tocjsDefaultOutput" if="dita.plugin.com.sophos.tocjs.copydefaults">
-      <!-- Create usable output for people trying tocjs for the first time -->
-      
-<antcall target="tocjsDefaultXhtmlOutput"></antcall>
-      
-<antcall target="tocjsDefaultFrameset"></antcall>
-      <!-- Copy default JS and related files -->
-      
-<copy todir="${output.dir}">
-<fileset dir="${dita.plugin.com.sophos.tocjs.dir}${file.separator}basefiles">
-<include name="**/*"></include></fileset></copy>
-  </target>
+<import file="plugins/com.moldflow.dita.plus-allhtml-xhtml-namespace/build_plus-allhtml-xhtml-namespace.xml"></import>
+
 
   
-<target name="tocjsDefaultXhtmlOutput" depends="dita.map.xhtml, copy-revflag, copy-css , dita.topics.xhtml, dita.inner.topics.xhtml, dita.outer.topics.xhtml">
-      <!-- Preprocess has already completed based on original dependencies;
-           this target continues to XHTML for default output. Seems very 
-           indirect way to create the XHTML, so would like something better,
-           but do not want to add new XHTML processing for people using
-           the original dita2tocjs target. -->
-  </target>
+<import file="plugins/com.moldflow.dita.plus-transtype-html/build_plus-transtype-html.xml"></import>
+
 
   
-<target name="tocjsDefaultFrameset" if="dita.plugin.com.sophos.tocjs.copydefaults">
-      <!-- Create the default frameset itself -->
-      
-<condition property="out.ext" value=".html">
-          
-<not>
-              
-<isset property="out.ext"></isset>
-          </not>
-      </condition>
-      
-<xslt processor="trax" basedir="${dita.temp.dir}" destdir="${output.dir}" includesfile="${dita.temp.dir}${file.separator}${user.input.file.listfile}" extension="${out.ext}" style="${dita.plugin.com.sophos.tocjs.dir}${file.separator}xsl${file.separator}frameset.xsl">
-  	    
-<excludesfile name="${dita.temp.dir}${file.separator}${resourceonlyfile}" if="resourceonlyfile"></excludesfile>
-        
-<param name="DITAEXT" expression="${dita.ext}" if="dita.ext"></param>
-        
-<param name="OUTEXT" expression="${out.ext}" if="out.ext"></param>
-        
-<param name="CSSPATH" expression="${CSSPATH}" if="csspath"></param>
-      </xslt>
-  </target>
+<import file="plugins/com.moldflow.dita.plus-transtype-htmlhelp/build_plus-transtype-htmlhelp.xml"></import>
 
-<!-- This file is part of the DITA Open Toolkit project hosted on 
-  Sourceforge.net. See the accompanying license.txt file for 
-  applicable licenses.--><!-- (c) Copyright IBM Corp. 2011 All Rights Reserved. -->
-  
-<import file="build_dita2odt.xml"></import>
-<!-- This file is part of the DITA Open Toolkit project hosted on 
-  Sourceforge.net. See the accompanying license.txt file for 
-  applicable licenses.--><!-- (c) Copyright IBM Corp. 2011 All Rights Reserved. -->
-  
-<import file="build_dita2eclipsehelp.xml"></import>
-<!-- This file is part of the DITA Open Toolkit project hosted on 
-  Sourceforge.net. See the accompanying license.txt file for 
-  applicable licenses.--><!-- (c) Copyright IBM Corp. 2011 All Rights Reserved. -->
-  
-<import file="build_dita2eclipsecontent.xml"></import>
-<!-- This file is part of the DITA Open Toolkit project hosted on 
-  Sourceforge.net. See the accompanying license.txt file for 
-  applicable licenses.--><!-- (c) Copyright IBM Corp. 2011 All Rights Reserved. -->
-  
-<import file="build_dita2troff.xml"></import>
 
   
+<import file="plugins/com.moldflow.dita.plus-allhtml-svgimage-svginline/build_plus-allhtml-svgimage-svginline.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-htmlhelp-hhp-windows-configfile/build_plus-htmlhelp-hhp-windows-configfile.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-allhtml-mathml/build_plus-allhtml-mathml.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-html-topics-twopass/build_plus-html-topics-twopass.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-htmlhelp-topics-twopass/build_plus-htmlhelp-topics-twopass.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-allhtml-svgobject/build_plus-allhtml-svgobject.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-allhtml-mathml-svgobject/build_plus-allhtml-mathml-svgobject.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-allhtml-syntaxdiagram/build_plus-allhtml-syntaxdiagram.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.syntaxdiagram2svg/syntaxdiagram2svg.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-allhtml-mathml-inline/build_plus-allhtml-mathml-inline.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-allhtml-encoding/build_plus-allhtml-encoding.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-htmlhelp-currentencoding/build_plus-htmlhelp-currentencoding.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-allhtml-mathml-svginline/build_plus-allhtml-mathml-svginline.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-htmlhelp-alias-map/build_plus-htmlhelp-alias-map.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-allhtml-treediagram/build_plus-allhtml-treediagram.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-htmlhelp-csh/build_plus-htmlhelp-csh.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.treediagram2svg/treediagram2svg.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-allhtml-treediagram-svgobject/build_plus-allhtml-treediagram-svgobject.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-allhtml-treediagram-svginline/build_plus-allhtml-treediagram-svginline.xml"></import>
+
 
   
 <import file="demo/fo/build.xml"></import>
 
+
+  
+<import file="plugins/com.moldflow.dita.plus-allhtml-svgimage-svgobject/build_plus-allhtml-svgimage-svgobject.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-allhtml-syntaxdiagram-svgobject/build_plus-allhtml-syntaxdiagram-svgobject.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-allhtml-syntaxdiagram-svginline/build_plus-allhtml-syntaxdiagram-svginline.xml"></import>
+
+  
+<import file="plugins/com.moldflow.dita.plus-htmlhelp-includefile/build_plus-htmlhelp-includefile.xml"></import>
 
   
   <target name="help">
@@ -379,7 +482,7 @@
     <echo level="info">  args.input=&lt;file&gt;</echo>
     <echo level="info">    Path and name of the input file.</echo>
     <echo level="info"></echo>
-    <echo level="info">  transtype={docbook|eclipsecontent|eclipsehelp|htmlhelp|javahelp|legacypdf|odt|pdf|pdf2|tocjs|troff|wordrtf|xhtml}</echo>
+    <echo level="info">  transtype={docbook|eclipsecontent|eclipsehelp|eclipsehelp+|html+|htmlhelp|htmlhelp+|javahelp|legacypdf|odt|pdf|pdf2|tocjs|troff|wordrtf|xhtml|xhtml+}</echo>
     <echo level="info">    Transformation type.</echo>
     <echo level="info"></echo>
     <echo level="info">Optional properties:</echo>

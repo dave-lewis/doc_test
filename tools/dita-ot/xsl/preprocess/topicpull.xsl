@@ -5,5 +5,6 @@
   <xsl:import href="topicpull-task.xsl"></xsl:import>
   <xsl:import href="topicpull-pr-d.xsl"></xsl:import>
   
+<xsl:import href="../../demo/acl_branding/xsl/topicpull_changes.xsl"/>
   <xsl:output method="xml" encoding="utf-8" indent="no"></xsl:output>
 </xsl:stylesheet>

@@ -1,7 +1,7 @@
-<project name="plus-allhtml-mathml-svginline">
+<?xml version="1.0" encoding="utf-8"?><project name="plus-allhtml-mathml-svginline">
 
   <target name="plus-allhtml-mathml-svginline.init" depends="plus-allhtml-mathml.init">
-    
+    <!-- MathML format to be placed into XHTML output. -->
     <condition property="plus.mathml.format" value="svginline">
       <not>
         <isset property="plus.mathml.format"></isset>

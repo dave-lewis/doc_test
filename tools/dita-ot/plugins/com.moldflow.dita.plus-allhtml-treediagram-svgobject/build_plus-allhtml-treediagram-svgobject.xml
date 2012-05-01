@@ -1,4 +1,4 @@
-<project name="plus-allhtml-treediagram-svgobject">
+<?xml version="1.0" encoding="utf-8"?><project name="plus-allhtml-treediagram-svgobject">
 
   <target name="plus-allhtml-treediagram-svgobject.init" depends="plus-allhtml-treediagram.init,plus-allhtml-svgobject.init,treediagram2svg.copy-files.init">
     <condition property="plus.treediagram.format" value="svgobject">
@@ -7,7 +7,8 @@
       </not>
     </condition>
 
-    
+    <!-- Default location for CSS that applies to treediagrams,
+         relative to root of temp (svgobject, svgraster) dir. -->
     <condition property="plus-allhtml-treediagram-svgobject.csspath" value="css/">
       <and>
         <equals arg1="${plus.treediagram.format}" arg2="svgobject"></equals>
@@ -15,7 +16,8 @@
       </and>
     </condition>
 
-    
+    <!-- Default location for Javascript that processes treediagrams,
+         relative to root of temp dir. -->
     <condition property="plus-allhtml-treediagram-svgobject.jspath" value="js/treediagram-svg/">
       <and>
         <equals arg1="${plus.treediagram.format}" arg2="svgobject"></equals>

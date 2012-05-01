@@ -1,14 +1,15 @@
-<project name="plus-allhtml-syntaxdiagram-svgobject">
+<?xml version="1.0" encoding="utf-8"?><project name="plus-allhtml-syntaxdiagram-svgobject">
 
   <target name="plus-allhtml-syntaxdiagram-svgobject.init" depends="plus-allhtml-syntaxdiagram.init,plus-allhtml-svgobject.init,syntaxdiagram2svg.copy-files.init">
-    
+    <!-- Syntax Diagram format to be placed into XHTML output. -->
     <condition property="plus.syntaxdiagram.format" value="svgobject">
       <not>
         <isset property="plus.syntaxdiagram.format"></isset>
       </not>
     </condition>
 
-    
+    <!-- Default location for CSS that applies to syntaxdiagrams,
+         relative to root of temp dir. -->
     <condition property="plus-allhtml-syntaxdiagram-svgobject.csspath" value="css/">
       <and>
         <equals arg1="${plus.syntaxdiagram.format}" arg2="svgobject"></equals>
@@ -16,7 +17,8 @@
       </and>
     </condition>
 
-    
+    <!-- Default location for Javascript that processes syntaxdiagrams,
+         relative to root of temp dir. -->
     <condition property="plus-allhtml-syntaxdiagram-svgobject.jspath" value="js/syntaxdiagram-svg/">
       <and>
         <equals arg1="${plus.syntaxdiagram.format}" arg2="svgobject"></equals>

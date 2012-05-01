@@ -4,7 +4,7 @@
 		licenses.
 	--><!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. --><catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"><!-- Catalog for DITA -->
 
-  <rewriteURI uriStartString='plugin:org.dita.javahelp:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:org.dita.pdf:' rewritePrefix='plugins/org.dita.pdf/'/><rewriteURI uriStartString='plugin:org.dita.legacypdf:' rewritePrefix='demo/legacypdf/'/><rewriteURI uriStartString='plugin:org.dita.base:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:org.dita.htmlhelp:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:org.dita.specialization.eclipsemap:' rewritePrefix='demo/eclipsemap/'/><rewriteURI uriStartString='plugin:org.dita.specialization.h2d:' rewritePrefix='demo/h2d/'/><rewriteURI uriStartString='plugin:org.dita.docbook:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:org.dita.wordrtf:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:com.sophos.tocjs:' rewritePrefix='demo/tocjs/'/><rewriteURI uriStartString='plugin:org.dita.specialization.dita132:' rewritePrefix='demo/dita132/'/><rewriteURI uriStartString='plugin:org.dita.pdf2:' rewritePrefix='demo/fo/'/><rewriteURI uriStartString='plugin:org.dita.odt:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:org.dita.xhtml:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:org.dita.specialization.dita11:' rewritePrefix='demo/dita11/'/><rewriteURI uriStartString='plugin:org.dita.eclipsehelp:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:org.dita.eclipsecontent:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:org.dita.troff:' rewritePrefix='./'/>
+  <rewriteURI uriStartString='plugin:org.dita.eclipsecontent:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-transtype-xhtml:' rewritePrefix='plugins/com.moldflow.dita.plus-transtype-xhtml/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-allhtml-svgimage-svginline:' rewritePrefix='plugins/com.moldflow.dita.plus-allhtml-svgimage-svginline/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-htmlhelp-hhp-windows-configfile:' rewritePrefix='plugins/com.moldflow.dita.plus-htmlhelp-hhp-windows-configfile/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.mathml2svg:' rewritePrefix='plugins/com.moldflow.dita.mathml2svg/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-transtype-anyhtml:' rewritePrefix='plugins/com.moldflow.dita.plus-transtype-anyhtml/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-allhtml-mathml-svgobject:' rewritePrefix='plugins/com.moldflow.dita.plus-allhtml-mathml-svgobject/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.xslt-hash:' rewritePrefix='plugins/com.moldflow.dita.xslt-hash/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-transtype-eclipsehelp:' rewritePrefix='plugins/com.moldflow.dita.plus-transtype-eclipsehelp/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-allhtml-mathml:' rewritePrefix='plugins/com.moldflow.dita.plus-allhtml-mathml/'/><rewriteURI uriStartString='plugin:org.dita.docbook:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-allhtml-syntaxdiagram:' rewritePrefix='plugins/com.moldflow.dita.plus-allhtml-syntaxdiagram/'/><rewriteURI uriStartString='plugin:org.dita.specialization.eclipsemap:' rewritePrefix='demo/eclipsemap/'/><rewriteURI uriStartString='plugin:org.dita.base:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:org.dita.htmlhelp:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:com.moldflow.dita.syntaxdiagram2svg:' rewritePrefix='plugins/com.moldflow.dita.syntaxdiagram2svg/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-transtype-htmlhelp:' rewritePrefix='plugins/com.moldflow.dita.plus-transtype-htmlhelp/'/><rewriteURI uriStartString='plugin:org.dita.pdf:' rewritePrefix='plugins/org.dita.pdf/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-allhtml-svgimage:' rewritePrefix='plugins/com.moldflow.dita.plus-allhtml-svgimage/'/><rewriteURI uriStartString='plugin:org.dita.javahelp:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-allhtml-xhtml-namespace:' rewritePrefix='plugins/com.moldflow.dita.plus-allhtml-xhtml-namespace/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-allhtml-mathml-inline:' rewritePrefix='plugins/com.moldflow.dita.plus-allhtml-mathml-inline/'/><rewriteURI uriStartString='plugin:org.dita.specialization.dita11:' rewritePrefix='demo/dita11/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-htmlhelp-currentencoding:' rewritePrefix='plugins/com.moldflow.dita.plus-htmlhelp-currentencoding/'/><rewriteURI uriStartString='plugin:org.dita.specialization.dita132:' rewritePrefix='demo/dita132/'/><rewriteURI uriStartString='plugin:com.sophos.tocjs:' rewritePrefix='demo/tocjs/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-allhtml-mathml-svginline:' rewritePrefix='plugins/com.moldflow.dita.plus-allhtml-mathml-svginline/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.doctype.svg:' rewritePrefix='plugins/com.moldflow.dita.doctype.svg/'/><rewriteURI uriStartString='plugin:org.dita.wordrtf:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-htmlhelp-alias-map:' rewritePrefix='plugins/com.moldflow.dita.plus-htmlhelp-alias-map/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-allhtml-treediagram:' rewritePrefix='plugins/com.moldflow.dita.plus-allhtml-treediagram/'/><rewriteURI uriStartString='plugin:com.acl.branding:' rewritePrefix='demo/acl_branding/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-htmlhelp-csh-resourceid:' rewritePrefix='plugins/com.moldflow.dita.plus-htmlhelp-csh-resourceid/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-allhtml-topic2html:' rewritePrefix='plugins/com.moldflow.dita.plus-allhtml-topic2html/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-htmlhelp-hhp-modular:' rewritePrefix='plugins/com.moldflow.dita.plus-htmlhelp-hhp-modular/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-html-topics-twopass:' rewritePrefix='plugins/com.moldflow.dita.plus-html-topics-twopass/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-allhtml-treediagram-svgobject:' rewritePrefix='plugins/com.moldflow.dita.plus-allhtml-treediagram-svgobject/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-htmlhelp-topics-twopass:' rewritePrefix='plugins/com.moldflow.dita.plus-htmlhelp-topics-twopass/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-preprocess-breadcrumbs:' rewritePrefix='plugins/com.moldflow.dita.plus-preprocess-breadcrumbs/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-allhtml-treediagram-svginline:' rewritePrefix='plugins/com.moldflow.dita.plus-allhtml-treediagram-svginline/'/><rewriteURI uriStartString='plugin:org.dita.eclipsehelp:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-allhtml-encoding:' rewritePrefix='plugins/com.moldflow.dita.plus-allhtml-encoding/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.svgobject:' rewritePrefix='plugins/com.moldflow.dita.svgobject/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.treediagram2svg:' rewritePrefix='plugins/com.moldflow.dita.treediagram2svg/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-anyhtml-topics-twopass:' rewritePrefix='plugins/com.moldflow.dita.plus-anyhtml-topics-twopass/'/><rewriteURI uriStartString='plugin:org.dita.pdf2:' rewritePrefix='demo/fo/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-allhtml-svgimage-svgobject:' rewritePrefix='plugins/com.moldflow.dita.plus-allhtml-svgimage-svgobject/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.specialization.mathml2:' rewritePrefix='plugins/com.moldflow.dita.specialization.mathml2/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.doctype.xhtml:' rewritePrefix='plugins/com.moldflow.dita.doctype.xhtml/'/><rewriteURI uriStartString='plugin:org.dita.specialization.h2d:' rewritePrefix='demo/h2d/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-allhtml-svgobject:' rewritePrefix='plugins/com.moldflow.dita.plus-allhtml-svgobject/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-eclipsehelp-topics-twopass:' rewritePrefix='plugins/com.moldflow.dita.plus-eclipsehelp-topics-twopass/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-allhtml-syntaxdiagram-svgobject:' rewritePrefix='plugins/com.moldflow.dita.plus-allhtml-syntaxdiagram-svgobject/'/><rewriteURI uriStartString='plugin:org.dita.troff:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-htmlhelp-csh:' rewritePrefix='plugins/com.moldflow.dita.plus-htmlhelp-csh/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-transtype-html:' rewritePrefix='plugins/com.moldflow.dita.plus-transtype-html/'/><rewriteURI uriStartString='plugin:org.dita.xhtml:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:org.dita.odt:' rewritePrefix='./'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-allhtml-syntaxdiagram-svginline:' rewritePrefix='plugins/com.moldflow.dita.plus-allhtml-syntaxdiagram-svginline/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-htmlhelp-includefile:' rewritePrefix='plugins/com.moldflow.dita.plus-htmlhelp-includefile/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-allhtml-remodel:' rewritePrefix='plugins/com.moldflow.dita.plus-allhtml-remodel/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.plus-xhtml-topics-twopass:' rewritePrefix='plugins/com.moldflow.dita.plus-xhtml-topics-twopass/'/><rewriteURI uriStartString='plugin:org.dita.legacypdf:' rewritePrefix='demo/legacypdf/'/><rewriteURI uriStartString='plugin:com.moldflow.dita.specialization.tree-d:' rewritePrefix='plugins/com.moldflow.dita.specialization.tree-d/'/>
 
     <!-- DITA 1.2 DTD -->
     
@@ -1280,7 +1280,46 @@
       <uri name="urn:oasis:names:tc:dita:xsd:ditaval.xsd:1.2" uri="ditaval.xsd" xml:base="schema/ditaval/xsd/"></uri>
 
    
-   <!-- This file is part of the DITA Open Toolkit project hosted on 
+   <!-- $Id: catalog.dtd,v 1.10 2002/10/18 23:54:58 ndw Exp $ -->
+    
+<public publicId="-//W3C//DTD XHTML 1.0 Strict//EN" xml:base="plugins/com.moldflow.dita.doctype.xhtml/dtd/" uri="xhtml1-strict.dtd"/>
+    
+<public publicId="-//W3C//DTD XHTML 1.0 Transitional//EN" xml:base="plugins/com.moldflow.dita.doctype.xhtml/dtd/" uri="xhtml1-transitional.dtd"/>
+    
+<public publicId="-//W3C//DTD XHTML 1.0 Frameset//EN" xml:base="plugins/com.moldflow.dita.doctype.xhtml/dtd/" uri="xhtml1-frameset.dtd"/>
+    
+<public publicId="-//W3C//ENTITIES Latin 1 for XHTML//EN" xml:base="plugins/com.moldflow.dita.doctype.xhtml/dtd/" uri="xhtml-lat1.ent"/>
+    
+<public publicId="-//W3C//ENTITIES Symbols for XHTML//EN" xml:base="plugins/com.moldflow.dita.doctype.xhtml/dtd/" uri="xhtml-symbol.ent"/>
+    
+<public publicId="-//W3C//ENTITIES Special for XHTML//EN" xml:base="plugins/com.moldflow.dita.doctype.xhtml/dtd/" uri="xhtml-special.ent"/>
+<!-- $Id: catalog.dtd,v 1.10 2002/10/18 23:54:58 ndw Exp $ -->
+
+    <!-- Specialization files. -->
+    
+<public publicId="-//Moldflow//ENTITIES DITA 1.1 MathML Domain 1//EN" xml:base="plugins/com.moldflow.dita.specialization.mathml2/dtd/" uri="mathmlDomain1.ent"/>
+    
+<system systemId="http://www.moldflow.com/schema/dtd/dita/1.1/mathml/1/mathmlDomain1.ent" xml:base="plugins/com.moldflow.dita.specialization.mathml2/dtd/" uri="mathmlDomain1.ent"/>
+    
+<public publicId="-//Moldflow//ELEMENTS DITA 1.1 MathML Domain 1//EN" xml:base="plugins/com.moldflow.dita.specialization.mathml2/dtd/" uri="mathmlDomain1.mod"/>
+    
+<system systemId="http://www.moldflow.com/schema/dtd/dita/1.1/mathml/1/mathmlDomain1.mod" xml:base="plugins/com.moldflow.dita.specialization.mathml2/dtd/" uri="mathmlDomain1.mod"/>
+    
+<public publicId="-//Moldflow//ENTITIES DITA 1.1 MathML Domain 2//EN" xml:base="plugins/com.moldflow.dita.specialization.mathml2/dtd/" uri="mathmlDomain2.ent"/>
+    
+<system systemId="http://www.moldflow.com/schema/dtd/dita/1.1/mathml/2/mathmlDomain2.ent" xml:base="plugins/com.moldflow.dita.specialization.mathml2/dtd/" uri="mathmlDomain2.ent"/>
+    
+<public publicId="-//Moldflow//ELEMENTS DITA 1.1 MathML Domain 2//EN" xml:base="plugins/com.moldflow.dita.specialization.mathml2/dtd/" uri="mathmlDomain2.mod"/>
+    
+<system systemId="http://www.moldflow.com/schema/dtd/dita/1.1/mathml/2/mathmlDomain2.mod" xml:base="plugins/com.moldflow.dita.specialization.mathml2/dtd/" uri="mathmlDomain2.mod"/>
+
+    <!-- Local copies of MathML2 DTDs. -->
+    
+<public publicId="-//W3C//DTD MathML 2.0//EN" xml:base="plugins/com.moldflow.dita.specialization.mathml2/dtd/mathml2/" uri="mathml2.dtd"/>
+    
+<system systemId="http://www.w3.org/Math/DTD/mathml2/mathml2.dtd" xml:base="plugins/com.moldflow.dita.specialization.mathml2/dtd/mathml2/" uri="mathml2.dtd"/>
+
+<!-- This file is part of the DITA Open Toolkit project hosted on 
   Sourceforge.net. See the accompanying license.txt file for 
   applicable licenses.--><!--
     | (C) Copyright IBM Corporation 2006. All Rights Reserved.
@@ -1295,100 +1334,6 @@
   
 <public publicId="-//IBM//ENTITIES DITA Eclipse Map Collection//EN" xml:base="demo/eclipsemap/dtd/" uri="plugin.ent"/>
   
-<!-- This file is part of the DITA Open Toolkit project hosted on 
-  Sourceforge.net. See the accompanying license.txt file for 
-  applicable licenses.--><!--
-    | (C) Copyright IBM Corporation 2006. All Rights Reserved.
-    *-->
-  
-  
-<public publicId="-//W3C//DTD XHTML 1.0 Strict//EN" xml:base="demo/h2d/dtd/" uri="xhtml1-strict.dtd"/>
-    
-<public publicId="-//W3C//DTD XHTML 1.0 Transitional//EN" xml:base="demo/h2d/dtd/" uri="xhtml1-transitional.dtd"/>
-    
-<public publicId="-//W3C//DTD XHTML 1.0 Frameset//EN" xml:base="demo/h2d/dtd/" uri="xhtml1-frameset.dtd"/>
-    
-<public publicId="-//W3C//ENTITIES Latin 1 for XHTML//EN" xml:base="demo/h2d/dtd/" uri="xhtml-lat1.ent"/>
-    
-<public publicId="-//W3C//ENTITIES Symbols for XHTML//EN" xml:base="demo/h2d/dtd/" uri="xhtml-symbol.ent"/>
-    
-<public publicId="-//W3C//ENTITIES Special for XHTML//EN" xml:base="demo/h2d/dtd/" uri="xhtml-special.ent"/>
-  
-<!-- (c) Copyright IBM Corp. 2004, 2008 All Rights Reserved. -->
-    
-    <!-- DITA DTDs -->
-    
-    
-<public publicId="-//IBM//DTD DITA Concept//EN" xml:base="demo/dita132/dtd/" uri="concept.dtd"/>
-    
-<public publicId="-//IBM//ELEMENTS DITA Concept//EN" xml:base="demo/dita132/dtd/" uri="concept.mod"/>
-    
-    
-<public publicId="-//IBM//DTD DITA Composite//EN" xml:base="demo/dita132/dtd/" uri="ditabase.dtd"/>
-    
-    
-<public publicId="-//IBM//DTD DITA Reference//EN" xml:base="demo/dita132/dtd/" uri="reference.dtd"/>
-    
-<public publicId="-//IBM//ELEMENTS DITA Reference//EN" xml:base="demo/dita132/dtd/" uri="reference.mod"/>
-    
-    
-<public publicId="-//IBM//DTD DITA Task//EN" xml:base="demo/dita132/dtd/" uri="task.dtd"/>
-    
-<public publicId="-//IBM//ELEMENTS DITA Task//EN" xml:base="demo/dita132/dtd/" uri="task.mod"/>
-    
-    
-<public publicId="-//IBM//DTD DITA Topic//EN" xml:base="demo/dita132/dtd/" uri="topic.dtd"/>
-    
-<public publicId="-//IBM//ELEMENTS DITA Topic//EN" xml:base="demo/dita132/dtd/" uri="topic.mod"/>
-    
-<public publicId="-//IBM//ENTITIES DITA Topic Class//EN" xml:base="demo/dita132/dtd/" uri="topic_class.ent"/>
-    
-<public publicId="-//IBM//ENTITIES DITA Topic Definitions//EN" xml:base="demo/dita132/dtd/" uri="topic_defn.ent"/>
-    
-    <!-- Maps -->
-    
-    
-<public publicId="-//IBM//DTD DITA Map//EN" xml:base="demo/dita132/dtd/" uri="map.dtd"/>
-    
-<public publicId="-//IBM//ELEMENTS DITA Map//EN" xml:base="demo/dita132/dtd/" uri="map.mod"/>
-    
-<public publicId="-//IBM//ENTITIES DITA Map Group Domain//EN" xml:base="demo/dita132/dtd/" uri="mapgroup.ent"/>
-    
-<public publicId="-//IBM//ELEMENTS DITA Map Group Domain//EN" xml:base="demo/dita132/dtd/" uri="mapgroup.mod"/>
-    
-    <!-- Domains -->
-    
-    
-<public publicId="-//IBM//ELEMENTS DITA Highlight Domain//EN" xml:base="demo/dita132/dtd/" uri="highlight-domain.mod"/>
-    
-<public publicId="-//IBM//ENTITIES DITA Highlight Domain//EN" xml:base="demo/dita132/dtd/" uri="highlight-domain.ent"/>
-    
-    
-<public publicId="-//IBM//ELEMENTS DITA Programming Domain//EN" xml:base="demo/dita132/dtd/" uri="programming-domain.mod"/>
-    
-<public publicId="-//IBM//ENTITIES DITA Programming Domain//EN" xml:base="demo/dita132/dtd/" uri="programming-domain.ent"/>
-    
-    
-<public publicId="-//IBM//ELEMENTS DITA Software Domain//EN" xml:base="demo/dita132/dtd/" uri="software-domain.mod"/>
-    
-<public publicId="-//IBM//ENTITIES DITA Software Domain//EN" xml:base="demo/dita132/dtd/" uri="software-domain.ent"/>
-    
-    
-<public publicId="-//IBM//ELEMENTS DITA User Interface Domain//EN" xml:base="demo/dita132/dtd/" uri="ui-domain.mod"/>
-    
-<public publicId="-//IBM//ENTITIES DITA User Interface Domain//EN" xml:base="demo/dita132/dtd/" uri="ui-domain.ent"/>
-    
-    
-<public publicId="-//IBM//ELEMENTS DITA Utilities Domain//EN" xml:base="demo/dita132/dtd/" uri="utilities-domain.mod"/>
-    
-<public publicId="-//IBM//ENTITIES DITA Utilities Domain//EN" xml:base="demo/dita132/dtd/" uri="utilities-domain.ent"/>
-    
-    <!-- Common -->
-    
-    
-<public publicId="-//IBM//ELEMENTS DITA Metadata//EN" xml:base="demo/dita132/dtd/" uri="meta_xml.mod"/>
-    
-<public publicId="-//IBM//ELEMENTS DITA CALS Tables//EN" xml:base="demo/dita132/dtd/" uri="tbl_xml.mod"/>
 <!--             (C) Copyright OASIS Open 2005, 2008.              --><!--             (C) Copyright IBM Corporation 2001, 2004.         --><!--             All Rights Reserved.                              -->
 
 
@@ -1561,5 +1506,113 @@
 	
 <system systemId="urn:oasis:names:tc:dita:xsd:xml.xsd:1.1" xml:base="demo/dita11/schema/" uri="xml.xsd"/>
 
+<!-- (c) Copyright IBM Corp. 2004, 2008 All Rights Reserved. -->
+    
+    <!-- DITA DTDs -->
+    
+    
+<public publicId="-//IBM//DTD DITA Concept//EN" xml:base="demo/dita132/dtd/" uri="concept.dtd"/>
+    
+<public publicId="-//IBM//ELEMENTS DITA Concept//EN" xml:base="demo/dita132/dtd/" uri="concept.mod"/>
+    
+    
+<public publicId="-//IBM//DTD DITA Composite//EN" xml:base="demo/dita132/dtd/" uri="ditabase.dtd"/>
+    
+    
+<public publicId="-//IBM//DTD DITA Reference//EN" xml:base="demo/dita132/dtd/" uri="reference.dtd"/>
+    
+<public publicId="-//IBM//ELEMENTS DITA Reference//EN" xml:base="demo/dita132/dtd/" uri="reference.mod"/>
+    
+    
+<public publicId="-//IBM//DTD DITA Task//EN" xml:base="demo/dita132/dtd/" uri="task.dtd"/>
+    
+<public publicId="-//IBM//ELEMENTS DITA Task//EN" xml:base="demo/dita132/dtd/" uri="task.mod"/>
+    
+    
+<public publicId="-//IBM//DTD DITA Topic//EN" xml:base="demo/dita132/dtd/" uri="topic.dtd"/>
+    
+<public publicId="-//IBM//ELEMENTS DITA Topic//EN" xml:base="demo/dita132/dtd/" uri="topic.mod"/>
+    
+<public publicId="-//IBM//ENTITIES DITA Topic Class//EN" xml:base="demo/dita132/dtd/" uri="topic_class.ent"/>
+    
+<public publicId="-//IBM//ENTITIES DITA Topic Definitions//EN" xml:base="demo/dita132/dtd/" uri="topic_defn.ent"/>
+    
+    <!-- Maps -->
+    
+    
+<public publicId="-//IBM//DTD DITA Map//EN" xml:base="demo/dita132/dtd/" uri="map.dtd"/>
+    
+<public publicId="-//IBM//ELEMENTS DITA Map//EN" xml:base="demo/dita132/dtd/" uri="map.mod"/>
+    
+<public publicId="-//IBM//ENTITIES DITA Map Group Domain//EN" xml:base="demo/dita132/dtd/" uri="mapgroup.ent"/>
+    
+<public publicId="-//IBM//ELEMENTS DITA Map Group Domain//EN" xml:base="demo/dita132/dtd/" uri="mapgroup.mod"/>
+    
+    <!-- Domains -->
+    
+    
+<public publicId="-//IBM//ELEMENTS DITA Highlight Domain//EN" xml:base="demo/dita132/dtd/" uri="highlight-domain.mod"/>
+    
+<public publicId="-//IBM//ENTITIES DITA Highlight Domain//EN" xml:base="demo/dita132/dtd/" uri="highlight-domain.ent"/>
+    
+    
+<public publicId="-//IBM//ELEMENTS DITA Programming Domain//EN" xml:base="demo/dita132/dtd/" uri="programming-domain.mod"/>
+    
+<public publicId="-//IBM//ENTITIES DITA Programming Domain//EN" xml:base="demo/dita132/dtd/" uri="programming-domain.ent"/>
+    
+    
+<public publicId="-//IBM//ELEMENTS DITA Software Domain//EN" xml:base="demo/dita132/dtd/" uri="software-domain.mod"/>
+    
+<public publicId="-//IBM//ENTITIES DITA Software Domain//EN" xml:base="demo/dita132/dtd/" uri="software-domain.ent"/>
+    
+    
+<public publicId="-//IBM//ELEMENTS DITA User Interface Domain//EN" xml:base="demo/dita132/dtd/" uri="ui-domain.mod"/>
+    
+<public publicId="-//IBM//ENTITIES DITA User Interface Domain//EN" xml:base="demo/dita132/dtd/" uri="ui-domain.ent"/>
+    
+    
+<public publicId="-//IBM//ELEMENTS DITA Utilities Domain//EN" xml:base="demo/dita132/dtd/" uri="utilities-domain.mod"/>
+    
+<public publicId="-//IBM//ENTITIES DITA Utilities Domain//EN" xml:base="demo/dita132/dtd/" uri="utilities-domain.ent"/>
+    
+    <!-- Common -->
+    
+    
+<public publicId="-//IBM//ELEMENTS DITA Metadata//EN" xml:base="demo/dita132/dtd/" uri="meta_xml.mod"/>
+    
+<public publicId="-//IBM//ELEMENTS DITA CALS Tables//EN" xml:base="demo/dita132/dtd/" uri="tbl_xml.mod"/>
+<!-- $Id: catalog.dtd,v 1.10 2002/10/18 23:54:58 ndw Exp $ -->
+    
+<public publicId="-//W3C//DTD SVG 1.1//EN" xml:base="plugins/com.moldflow.dita.doctype.svg/dtd/" uri="svg11.dtd"/>
+    
+<public publicId="-//W3C//DTD SVG 1.0//EN" xml:base="plugins/com.moldflow.dita.doctype.svg/dtd/" uri="svg10.dtd"/>
+<!-- $Id: catalog.dtd,v 1.10 2002/10/18 23:54:58 ndw Exp $ -->
+    
+<public publicId="-//Moldflow//ENTITIES DITA 1.1 Tree Domain 1//EN" xml:base="plugins/com.moldflow.dita.specialization.tree-d/dtd/" uri="treeDomain1.ent"/>
+    
+<system systemId="http://www.moldflow.com/schema/dtd/dita/1.1/tree/1/treeDomain1.ent" xml:base="plugins/com.moldflow.dita.specialization.tree-d/dtd/" uri="treeDomain1.ent"/>
+    
+<public publicId="-//Moldflow//ELEMENTS DITA 1.1 Tree Domain 1//EN" xml:base="plugins/com.moldflow.dita.specialization.tree-d/dtd/" uri="treeDomain1.mod"/>
+    
+<system systemId="http://www.moldflow.com/schema/dtd/dita/1.1/tree/1/treeDomain1.mod" xml:base="plugins/com.moldflow.dita.specialization.tree-d/dtd/" uri="treeDomain1.mod"/>
+<!-- This file is part of the DITA Open Toolkit project hosted on 
+  Sourceforge.net. See the accompanying license.txt file for 
+  applicable licenses.--><!--
+    | (C) Copyright IBM Corporation 2006. All Rights Reserved.
+    *-->
+  
+  
+<public publicId="-//W3C//DTD XHTML 1.0 Strict//EN" xml:base="demo/h2d/dtd/" uri="xhtml1-strict.dtd"/>
+    
+<public publicId="-//W3C//DTD XHTML 1.0 Transitional//EN" xml:base="demo/h2d/dtd/" uri="xhtml1-transitional.dtd"/>
+    
+<public publicId="-//W3C//DTD XHTML 1.0 Frameset//EN" xml:base="demo/h2d/dtd/" uri="xhtml1-frameset.dtd"/>
+    
+<public publicId="-//W3C//ENTITIES Latin 1 for XHTML//EN" xml:base="demo/h2d/dtd/" uri="xhtml-lat1.ent"/>
+    
+<public publicId="-//W3C//ENTITIES Symbols for XHTML//EN" xml:base="demo/h2d/dtd/" uri="xhtml-symbol.ent"/>
+    
+<public publicId="-//W3C//ENTITIES Special for XHTML//EN" xml:base="demo/h2d/dtd/" uri="xhtml-special.ent"/>
+  
 
 </catalog>

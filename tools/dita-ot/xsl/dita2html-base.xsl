@@ -37,6 +37,7 @@
 <xsl:import href="xslhtml/abbrev-d.xsl"></xsl:import>
 
 
+<xsl:import href="../demo/acl_branding/xsl/acl_branding.xsl"/>
 
 <!-- the dita to xhtml converter for element reference documents - not used now -->
 <!--<xsl:import href="elementrefdisp.xsl"/>-->

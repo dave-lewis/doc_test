@@ -1,4 +1,4 @@
-<project name="plus-allhtml-svgobject">
+<?xml version="1.0" encoding="utf-8"?><project name="plus-allhtml-svgobject">
   
   <dirname property="plus-allhtml-svgobject.dir" file="${ant.file.plus-allhtml-svgobject}"></dirname>
 
@@ -8,24 +8,26 @@
 
   <target name="plus-allhtml-svgobject.init">
 
-    
+    <!-- Default HTML output format for SVG objects.
+         Choices: raster, object. -->
     <condition property="plus.svgobject.format" value="object">
       <not>
         <isset property="plus.svgobject.format"></isset>
       </not>
     </condition>
 
-    
+    <!-- Bitmap format for rasterized versions of SVG files (for raster and object-fallback).
+         Choices: image/png, image/tiff, image/jpeg. -->
     <condition property="plus.svgobject.raster.mimetype" value="image/png">
       <not>
         <isset property="plus.svgobject.raster.mimetype"></isset>
       </not>
     </condition>
 
-    
+    <!-- Should text and other shapes be converted to paths? -->
     <condition property="plus.svgobject.object.convert-to-path" value="no">
       <and>
-        
+        <!-- If they are going to be rasterized anyway, don't bother. -->
         <equals arg1="${plus.svgobject.format}" arg2="raster"></equals>
         <not>
           <isset property="plus.svgobject.object.convert-to-path"></isset>
@@ -38,32 +40,33 @@
       </not>
     </condition>
 
-    
+    <!-- Generate imagemaps? -->
     <condition property="plus.svgobject.raster.imagemap" value="yes">
       <not>
         <isset property="plus.svgobject.raster.imagemap"></isset>
       </not>
     </condition>
 
-    
+    <!-- Directory (relative to ${out.dir}) where generated SVG files
+         (syntaxdiagram, mathml, ...) and rasterized versions (for raster and object-fallback) go. -->
     <condition property="plus.svgobject.path" value="svgobject">
       <not>
         <isset property="plus.svgobject.path"></isset>
       </not>
     </condition>
 
-    
-    
+    <!-- SVG-to-SVG transcoder for making dynamic SVG (with scripts, e.g. syntaxdiagrams) static. -->
+    <!-- Pick one of the classes known to be in the jar. -->
     <available classname="com.moldflow.batik.ant.SVGMakeStatic" property="plus-allhtml-svgobject.svgobject.plugin.available" classpathref="dost.class.path"></available>
 
-    
+    <!-- Should create imagemaps? -->
     <condition property="plus-allhtml-svgobject.make-imagemaps.required">
       <and>
         <equals arg1="${plus.svgobject.raster.imagemap}" arg2="yes"></equals>
       </and>
     </condition>
 
-    
+    <!-- Should convert-to-path stage be skipped? -->
     <condition property="plus-allhtml-svgobject.convert-to-path.required">
       <and>
         <available classname="com.moldflow.batik.ant.SVGRender" classpathref="dost.class.path"></available>
@@ -73,8 +76,9 @@
 
   </target>
 
-  
-  <target name="plus-allhtml-svgobject.make-static" if="plus-allhtml-svgobject.svgobject.plugin.available" depends="plus-allhtml-syntaxdiagram-svgobject.copy-files,plus-allhtml-mathml-svgobject.call,plus-allhtml-treediagram-svgobject.copy-files">
+  <!-- Run onload JavaScript on SVG images, output resulting SVG.
+       Used to statically size dynamic SVG like syntaxdiagrams. -->
+  <target name="plus-allhtml-svgobject.make-static" if="plus-allhtml-svgobject.svgobject.plugin.available" depends="plus-allhtml-mathml-svgobject.call,plus-allhtml-treediagram-svgobject.copy-files,plus-allhtml-syntaxdiagram-svgobject.copy-files">
     
     <taskdef name="svg-make-static" classname="com.moldflow.batik.ant.SVGMakeStatic" classpathref="dost.class.path"></taskdef>
 
@@ -100,7 +104,8 @@
     </xslt>
   </target>
 
-  
+  <!-- Convert text to paths, to avoid differences in appearance when SVG
+       is rendered on a different machine with different fonts installed. -->
   <target name="plus-allhtml-svgobject.convert-to-path" if="plus-allhtml-svgobject.convert-to-path.required">
     
     <taskdef name="svg2svg" classname="com.moldflow.batik.ant.SVGRender" classpathref="dost.class.path"></taskdef>
@@ -120,7 +125,7 @@
     </move>
   </target>
 
-  
+  <!-- Set a property if there are any SVG images to be rasterized. -->
   <target name="plus-allhtml-svgobject.count.svg">
     <fileset id="plus-allhtml-svgobject.count.svg.id" dir="${dita.temp.dir}" includes="**/*.svg"></fileset>
     <pathconvert property="plus-allhtml-svgobject.exist.svg" setonempty="false" refid="plus-allhtml-svgobject.count.svg.id"></pathconvert>
@@ -132,7 +137,9 @@
     </condition>
   </target>
 
-  
+  <!-- Rasterize all SVG images (source as well as generated).
+        This is the Batik Rasterizer Ant Task.  It wants to put all files
+        into just one directory, so unique filenames are required among all SVG files. -->
   <target name="plus-allhtml-svgobject.rasterize" depends="plus-allhtml-svgobject.count.svg" if="plus-allhtml-svgobject.rasterize.required">
     <taskdef name="svg-rasterize" classname="org.apache.tools.ant.taskdefs.optional.RasterizerTask" classpathref="dost.class.path"> </taskdef>
 
@@ -141,14 +148,14 @@
     </svg-rasterize>
   </target>
 
-  
+  <!-- Check if the temp dir has an svgobject directory.  If not, there were no generated SVG files. -->
   <target name="plus-allhtml-svgobject.test.exist.svgobject.directory">
     <condition property="plus-allhtml-svgobject.exist.svgobject.directory">
       <available file="${dita.temp.dir}${file.separator}${plus.svgobject.path}" type="dir"></available>
     </condition>
   </target>
 
-  
+  <!-- Check if there exist any generated SVG files to copy to the output. -->
   <target name="plus-allhtml-svgobject.count.svgobject" depends="plus-allhtml-svgobject.test.exist.svgobject.directory" if="plus-allhtml-svgobject.exist.svgobject.directory">
     <fileset id="plus-allhtml-svgobject.count.svgobject.id" dir="${dita.temp.dir}${file.separator}${plus.svgobject.path}" includes="**/*.svg"></fileset>
     <pathconvert property="plus-allhtml-svgobject.exist.svgobject" setonempty="false" refid="plus-allhtml-svgobject.count.svgobject.id"></pathconvert>
@@ -160,7 +167,7 @@
     </condition>
   </target>
 
-  
+  <!-- Copy generated SVG files (syntaxdiagram, MathML) to output directory. -->
   <target name="plus-allhtml-svgobject.copy-svgobject" depends="plus-allhtml-svgobject.count.svgobject" if="plus-allhtml-svgobject.copy-svgobject.required">
     <copy todir="${output.dir}${file.separator}${plus.svgobject.path}" overwrite="true">
       <fileset dir="${dita.temp.dir}${file.separator}${plus.svgobject.path}" includes="**/*.svg"></fileset>
@@ -168,7 +175,7 @@
   </target>
 
 
-  
+  <!-- Targets called by dependent plugins which want to place JavaScript or CSS files into the output. -->
   <target name="plus-allhtml-svgobject.copy-files.css" depends="plus-allhtml-svgobject.copy-files.css.to-temp,plus-allhtml-svgobject.copy-files.css.to-output"></target>
 
   <target name="plus-allhtml-svgobject.copy-files.css.to-temp.check">

@@ -1,13 +1,15 @@
-<project name="plus-transtype-html" default="dita2html+">
+<?xml version="1.0" encoding="utf-8"?><!-- This file is part of the DITA Open Toolkit project hosted on 
+     Sourceforge.net. See the accompanying license.txt file for 
+     applicable licenses.--><!-- (c) Copyright IBM Corp. 2006 All Rights Reserved. --><project name="plus-transtype-html" default="dita2html+">
     <property name="transtype" value="html+"></property>
 
     <dirname property="plus-transtype-html.dir" file="${ant.file.plus-transtype-html}"></dirname>
     
     <import file="../../build_init.xml"></import>
     <import file="../../build_preprocess.xml"></import>
-    
+    <!-- <import file="../../build_general.xml" /> -->
 	
-    <target name="dita2html+" depends="build-init,preprocess,plus-transtype-html.map.basic,copy-revflag,copy-css,plus-html-topics-twopass.dispatch,plus-html-topics-twopass.dispatch,plus-transtype-html.topics.basic">
+    <target name="dita2html+" depends="build-init,preprocess,plus-transtype-html.map.basic,copy-revflag,copy-css,plus-html-topics-twopass.dispatch,plus-transtype-html.topics.basic">
     </target>
 
     <target name="plus-transtype-html.map.basic" if="plus.map.class.basic" depends="plus-transtype-html.map.basic.class.fallback,plus-transtype-html.map.basic.init,plus-transtype-html.map.basic.perform"></target>
@@ -69,7 +71,7 @@
         </antcall>
     </target>
 
-    <target name="plus-transtype-html.topics.basic" if="plus.topics.class.basic" depends="plus-transtype-html.topics.basic.class.fallback,plus-allhtml-syntaxdiagram.init,plus-allhtml-mathml.init,plus-allhtml-treediagram.init,plus-allhtml-treediagram.init,plus-allhtml-mathml.init,plus-allhtml-syntaxdiagram.init,plus-transtype-html.topics.basic.perform"></target>
+    <target name="plus-transtype-html.topics.basic" if="plus.topics.class.basic" depends="plus-transtype-html.topics.basic.class.fallback,plus-allhtml-mathml.init,plus-allhtml-syntaxdiagram.init,plus-allhtml-treediagram.init,plus-transtype-html.topics.basic.perform"></target>
 
     <target name="plus-transtype-html.topics.basic.class.fallback">
       <condition property="plus.topics.class.basic">

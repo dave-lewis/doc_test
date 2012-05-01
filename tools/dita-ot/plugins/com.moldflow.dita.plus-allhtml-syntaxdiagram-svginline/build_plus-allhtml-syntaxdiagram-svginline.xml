@@ -1,14 +1,15 @@
-<project name="plus-allhtml-syntaxdiagram-svginline">
+<?xml version="1.0" encoding="utf-8"?><project name="plus-allhtml-syntaxdiagram-svginline">
 
   <target name="plus-allhtml-syntaxdiagram-svginline.init" depends="plus-allhtml-syntaxdiagram.init">
-    
+    <!-- Syntax Diagram format to be placed into XHTML output.
+         Choices: svginline, svgraster, svgobject. -->
     <condition property="plus.syntaxdiagram.format" value="svginline">
       <not>
         <isset property="plus.syntaxdiagram.format"></isset>
       </not>
     </condition>
 
-    
+    <!-- Default location for CSS that applies to syntaxdiagrams. -->
     <condition property="plus-allhtml-syntaxdiagram-svginline.csspath" value="${user.csspath}">
       <and>
         <equals arg1="${plus.syntaxdiagram.format}" arg2="svginline"></equals>
@@ -16,7 +17,8 @@
       </and>
     </condition>
 
-    
+    <!-- Default location for Javascript that processes syntaxdiagrams,
+         relative to out dir. -->
     <condition property="plus-allhtml-syntaxdiagram-svginline.jspath" value="js/syntaxdiagram-svg/">
       <and>
         <equals arg1="${plus.syntaxdiagram.format}" arg2="svginline"></equals>
@@ -24,7 +26,7 @@
       </and>
     </condition>
 
-    
+    <!-- JavaScript code location for dynamic syntax diagrams. -->
     <condition property="plus-allhtml-syntaxdiagram-svginline.js.destination" value="${output.dir}/${plus-allhtml-syntaxdiagram-svginline.jspath}">
       <and>
         <equals arg1="${plus.syntaxdiagram.format}" arg2="svginline"></equals>
@@ -32,7 +34,7 @@
       </and>
     </condition>
 
-    
+    <!-- CSS location for dynamic syntax diagrams -->
     <condition property="plus-allhtml-syntaxdiagram-svginline.css.destination" value="${user.csspath.real}">
       <and>
         <equals arg1="${plus.syntaxdiagram.format}" arg2="svginline"></equals>

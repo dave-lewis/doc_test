@@ -4,5 +4,6 @@
   <xsl:import href="maplinkImpl.xsl"></xsl:import>
   
 <xsl:import href="../../demo/eclipsemap/xsl/maplink-plugin.xsl"/>
+<xsl:import href="../../plugins/com.moldflow.dita.plus-preprocess-breadcrumbs/xsl/preprocess/maplink.xsl"/>
   <xsl:output method="xml" encoding="utf-8" indent="no"></xsl:output>
 </xsl:stylesheet>

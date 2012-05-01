@@ -314,6 +314,9 @@
       <param name="DITAEXT" expression="${dita.ext}" if="dita.ext"></param>
       <param name="INPUTMAP" expression="${user.input.file}"></param>
       
+  
+<param name="BREADCRUMBS" expression="${plus.breadcrumbs}" if="plus.breadcrumbs"></param>
+
       <xmlcatalog refid="dita.catalog"></xmlcatalog>
     </xslt>
   </target>
