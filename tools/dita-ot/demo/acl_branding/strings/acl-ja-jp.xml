@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<strings xml:lang="ja-jp">        <!-- US English -->
+﻿<?xml version="1.0" encoding="utf-8"?>
+<strings xml:lang="ja-jp">
 	<str name="All Rights Reserved">All Rights Reserved.</str>
 	<str name="Section contents">セクション内容</str>
-	<str name="Feedback">Feedback</str>
+	<str name="Feedback">フィードバック</str>
 </strings>

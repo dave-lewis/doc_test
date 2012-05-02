@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <strings xml:lang="pl-pl">
 	<str name="All Rights Reserved">Wszelkie prawa zastrzeżone.</str>
 	<str name="Section contents">Zawartość sekcji</str>
-	<str name="Feedback">Feedback</str>
+	<str name="Feedback">Sprzężenie zwrotne</str>
 </strings>

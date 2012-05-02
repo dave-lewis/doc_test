@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <strings xml:lang="fr-fr">
 	<str name="All Rights Reserved">Tous droits réservés.</str>
 	<str name="Section contents">Contenu des sections</str>
-	<str name="Feedback">Feedback</str>
+	<str name="Feedback">Réaction</str>
 </strings>

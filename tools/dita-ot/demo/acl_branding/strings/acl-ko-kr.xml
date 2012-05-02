@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <strings xml:lang="ko-kr">
 	<str name="All Rights Reserved">All Rights Reserved.</str>
 	<str name="Section contents">절 내용</str>
-	<str name="Feedback">Feedback</str>
+	<str name="Feedback">피드백</str>
 </strings>

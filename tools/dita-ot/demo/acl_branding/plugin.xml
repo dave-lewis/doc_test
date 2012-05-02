@@ -29,7 +29,7 @@
   <feature extension="dita.xsl.xhtml" value="xsl/acl_branding.xsl" type="file"/>
   <!-- Fix table and figure processing to support FrameMaker attributes -->
   <feature extension="dita.xsl.topicpull" value="xsl/topicpull_changes.xsl" type="file"/>
-  <feature extension="dita.xsl.strings" file="strings/acl_strings.xml" />
+  <feature extension="dita.xsl.strings" value="strings/acl_strings.xml" type="file"/>
    <!-- Add an Ant file that sets a default for the new parameter -->
    <!--
        <feature extension="dita.conductor.target.relative" file="antWrapper.xml"/>
